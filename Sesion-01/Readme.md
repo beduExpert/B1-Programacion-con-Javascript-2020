@@ -277,3 +277,37 @@ console.log(a);	// Hello World
 a = null
 console.log(a);	// null
 ```
+
+---
+
+## Operador `typeof`
+
+El operador `typeof` es utilizado para averiguar qué tipo de dato contiene una variable. Puede ser usado con o sin paréntesis (`typeof(a)` o `typeof a`).
+
+```javascript
+// Numbers
+typeof 10;	// "number"
+typeof 12.5;	// "number"
+typeof 2.5e+6;	// "number"
+typeof Infinity;	// "number"
+typeof NaN;	// "number"
+
+// Strings
+typeof ' ';	// "string" - Espacios en blanco cuentan como caracteres
+typeof 'Hello World';	// "string"
+typeof '12';	// "string" - Números dentro de comillas son strings
+
+// Booleans
+typeof true;	// "boolean"
+typeof false;	// "boolean"
+
+// Undefined
+typeof undefined;	// "undefined"
+
+var name;
+typeof name; // "undefined" - Aún no se asigna un valor
+
+// Null
+typeof Null;	// "object"
+```
+> Cabe aclarar, "copiar y pegar" código **no es una buena práctica**. Es importante que todo el código que tú coloques en tu proyecto lo entiendas. Sepas por qué está ahí. Esto hará que tu aplicación pueda seguir creciendo y sigas teniendo, junto con tu equipo, el control del mismo.
