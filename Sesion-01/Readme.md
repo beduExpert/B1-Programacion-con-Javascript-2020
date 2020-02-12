@@ -310,4 +310,5 @@ typeof name; // "undefined" - Aún no se asigna un valor
 // Null
 typeof Null;	// "object"
 ```
-> Cabe aclarar, "copiar y pegar" código **no es una buena práctica**. Es importante que todo el código que tú coloques en tu proyecto lo entiendas. Sepas por qué está ahí. Esto hará que tu aplicación pueda seguir creciendo y sigas teniendo, junto con tu equipo, el control del mismo.
+> Cuando usamos el operador `typeof` con `null` obtenemos como resultado `object` en lugar de `null`.
+Esto es considerado como un bug en JavaScript que está presente desde su creación, debido a que hay muchísimo código escrito tomando en cuenta este comportamiento, la idea de corregir este bug fue abandonada ya que causaría más problemas.
