@@ -20,6 +20,10 @@ Conocerás su trayectoria y aprenderás a utilizar sus bases para comenzar a cre
 
 - **[Tipos de Datos](#tipos-de-datos)**
 
+- **[Operador typeof](#operador-typeof)**
+
+- **[Type coercion](#type-coercion)**
+
 ---
 
 ## ¿Por qué Javascript?
