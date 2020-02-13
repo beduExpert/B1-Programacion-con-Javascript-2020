@@ -179,23 +179,18 @@ JavaScript cuenta con seis tipos de datos que pueden ser divididos en tres categ
 #### Primitivos
 
 - String
-
 - Number
-
 - Boolean
 
 #### Compuestos (Referencia)
 
 - Object
-
 - Array
-
 - Function
 
 #### Especiales
 
 - Undefined
-
 - Null
 
 ### String
@@ -312,3 +307,75 @@ typeof Null;	// "object"
 ```
 > Cuando usamos el operador `typeof` con `null` obtenemos como resultado `object` en lugar de `null`.
 Esto es considerado como un bug en JavaScript que está presente desde su creación, debido a que hay muchísimo código escrito tomando en cuenta este comportamiento, la idea de corregir este bug fue abandonada ya que causaría más problemas.
+
+---
+
+## Type coercion
+
+La coerción de datos o type coercion es el proceso de convertir un valor de un tipo de dato a otro, por ejemplo, string a number, boolean a string, etc. Dicho proceso se puede dar de manera tanto explícita como implícita.
+
+La forma explícita es cuando se quiere hacer de manera intencional usando las funciones adecuadas como `String(value)` o `Number(value)`, a esto también se le conoce como type casting.
+
+Anteriormente mencionamos que JavaScript es un lenguaje de tipado débil, es por ello que los valores pueden cambiar de tipo de dato de manera automática, esto es la coerción de datos implícita. Usualmente pasa cuando aplicamos algún operador a valores con tipos de datos distintos.
+
+En JavaScript sólo existen tres tipos de conversiones posibles:
+
+- String
+- Number
+- Boolean
+
+### String conversion
+
+Para convertir un valor a string de manera explcícita usamos la función `String()`. La coercion implícita se da cuando usamor el operador `+` y cualquiera de los operandos es un string.
+
+```javascript
+String(123);	// Explícito
+123 + '';	// Implícito
+```
+
+Todos los valores primitivos se pueden convertir en strings.
+
+```javascript
+String(123);	// '123'
+String(3.14);	// '3.14'
+String(true);	// 'true'
+String(false);	// 'false'
+String(undefined);	// 'undefined'
+String(null);	// 'null'
+```
+
+### Numeric conversion
+
+Para convertir explícitamente un valor a tipo numérico se aplica la función `Number()`. Le coerción implícita es un poco más compleja que la de strings porque se da en distintias formas, como el uso de operadores aritméticos, toma en cuenta que para el caso del operador `+` es string conversion y no numérico si uno de los operandos es string, como ya se mencionó anteriormente.
+
+```javascript
+Number('123');	// Explícito
++ '123';	// Implícito
+1 - '1';	// Implícito
+2 * '2';	// Implícito
+```
+
+Los valores primitivos también pueden ser convertidos a tipos numéricos con distintos resultados.
+
+```javascript
+Number(' 10 ');	// 12
+Number('-10');	// 10
+Number('123abc');	// NaN
+Number(true);	// 1
+Number(false);	// 0
+Number(null);	// 0
+Number(undefined);	// NaN
+```
+
+### Boolean conversion
+
+Al igual que con strings y números, para una conversión explícita se usa una función, en este caso es `Boolean()`. La coerción implícita se da en un contexto lógico o al usar operadores lógicos.
+
+```javascript
+Boolean(1);	// Explícito
+if(1) { ... }	// Implícito - Contexto lógico
+!!2;	// Implícito - Operador lógico
+2 || 'Hello World';	// Implícito - Operador lógico
+```
+
+> En la siguiente sesión se vará más a detalle los operadores lógicos y booleanos
