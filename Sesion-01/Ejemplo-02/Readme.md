@@ -1,3 +1,7 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 02`
+
+---
+
 ## Ejemplo 2: Operadores
 
 ### Objetivo
