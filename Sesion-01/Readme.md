@@ -4,23 +4,23 @@
 
 # Sesión 1: Fundamentos de JS
 
-La gran bienvenida a Javascript. Uno de los lenguajes de programación más usados en el mundo.
+## Objetivos
 
-Conocerás su trayectoria y aprenderás a utilizar sus bases para comenzar a crear aplicaciones.
+Conocer la trayectoria de JavaScript, por qué es una buena opción, cómo aprender y entender los fundamentos.
 
 ---
 
-## Tabla de Contenido
+## Tabla de Contenidos
 
-- **[¿Por qué Javascript?](#por-que-javascript)**
+- **[¿Por qué Javascript?](#por-qué-javascript)**
 
-- **[¿Cómo comenzar y qué hacer?](#como-comenzar-y-que-hacer)**
+- **[¿Cómo comenzar y qué hacer?](#cómo-comenzar-y-qué-hacer)**
 
-- **[¿Qué es Javascript?](#que-es-javascript)**
+- **[¿Qué es Javascript?](#qué-es-javascript)**
 
 - **[Tu primer archivo Javascript](#tu-primer-archivo-javascript)**
 
-- **[¿Qué son las variables?](#que-son-las-variables)**
+- **[¿Qué son las variables?](#qué-son-las-variables)**
 
 - **[Tipos de Datos](#tipos-de-datos)**
 
