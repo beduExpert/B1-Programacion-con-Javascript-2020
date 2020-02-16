@@ -1,27 +1,68 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 1: Primeras condicionales
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Implementar operadores lógicos y condicionales tipo `if`/`else`.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <script type="text/javascript" src="./ejemplos-sesion-2.js"></script>
+  </head>
+</html>
+```
 
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Dentro de la misma carpeta creamos un archivo `ejemplos-sesion-2.js` que es donde se trabajarán los ejemplos de esta sesión. Finalmente abre el archivo `index.html` en Chrome e inspecciona la consola para ver los resultados.
 
 
+#### Desarrollo
+
+Vamos a dar un saludo adecuado dependiendo de la hora.
+
+```javascript
+var time = 13;
+var greeting;
+
+if (time < 12) {
+  greeting = "Good morning";
+}
+
+if (time < 20) {
+  greeting = "Good afternoon";
+}
+
+if (time >= 20) {
+  greeting = "Good evening";
+}
+
+console.log(greeting) // Good afternoon
+```
+
+![if](./assets/if.png)
+
+En lugar de tener distintos bloques con la condicional `if`, podemos concatenarlos todos con `else if`.
+
+```javascript
+var time = 13;
+var greeting;
+
+if (time < 12) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good afternoon";
+} else if (time >= 20) {
+  greeting = "Good evening";
+}
+
+console.log(greeting) // Good afternoon
+```
+
+![if/else](./assets/if-else.png)
