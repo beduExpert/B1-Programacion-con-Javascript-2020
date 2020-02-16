@@ -26,11 +26,17 @@ Conocer la trayectoria de JavaScript, por qué es una buena opción, cómo apren
 
 - **[Operador typeof](#operador-typeof)**
 
+  - [Ejemplo 1: Tipos de datos y operador `typeof`](./Ejemplo-01)
+
 - **[Type coercion](#type-coercion)**
 
 - **[Operadores](#operadores-básicos)**
 
+  - [Ejemplo 2: Operadores](./Ejemplo-02)
+
 - **[Precedencia de operadores](#precedencia-de-operadores)**
+
+  - [Ejemplo 3: Precedencia de operadores](./Ejemplo-03)
 
 ---
 
