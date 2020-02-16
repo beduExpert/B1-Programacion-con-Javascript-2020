@@ -1,3 +1,7 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 01`
+
+---
+
 ## Ejemplo 1: Tipos de datos y operador `typeof`
 
 ### Objetivo
