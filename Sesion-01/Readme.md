@@ -24,6 +24,10 @@ Conocerás su trayectoria y aprenderás a utilizar sus bases para comenzar a cre
 
 - **[Type coercion](#type-coercion)**
 
+- **[Operadores](#operadores-básicos)**
+
+- **[Precedencia de operadores](#precedencia-de-operadores)**
+
 ---
 
 ## ¿Por qué Javascript?
