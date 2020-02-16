@@ -1,27 +1,42 @@
+## Ejemplo 1: Tipos de datos y operador `typeof`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+### Objetivo
 
-## Titulo del Ejemplo
+Usaremos el operador `typeof` para conocer los distintos tipos de datos de manera práctica.
 
-### OBJETIVO
+#### Requisitos
 
-- Lo que esperamos que el alumno aprenda
+Puedes hacer el siguiente ejemplo directo en la consola de Chrome.
 
-#### REQUISITOS
+#### Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+```javascript
+// Numbers
+typeof 10;	// "number"
+typeof 12.5;	// "number"
+typeof 2.5e+6;	// "number"
+typeof Infinity;	// "number"
+typeof NaN;	// "number"
 
-#### DESARROLLO
+// Strings
+typeof ' ';	// "string" - Espacios en blanco cuentan como caracteres
+typeof 'Hello World';	// "string"
+typeof '12';	// "string" - Números dentro de comillas son strings
 
-Agrega las instrucciones generales del ejemplo o reto
+// Booleans
+typeof true;	// "boolean"
+typeof false;	// "boolean"
 
-<details>
+// Undefined
+typeof undefined;	// "undefined"
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+var name;
+typeof name; // "undefined" - Aún no se asigna un valor
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+// Null
+typeof Null;	// "object"
+```
+> Cuando usamos el operador `typeof` con `null` obtenemos como resultado `object` en lugar de `null`.
+Esto es considerado como un bug en JavaScript que está presente desde su creación, debido a que hay muchísimo código escrito tomando en cuenta este comportamiento, la idea de corregir este bug fue abandonada ya que causaría más problemas.
 
-
+![typeof operator](./assets/typeof.png)
