@@ -287,7 +287,7 @@ console.log(a);	// null
 
 El operador `typeof` es utilizado para averiguar qué tipo de dato contiene una variable. Puede ser usado con o sin paréntesis (`typeof(a)` o `typeof a`).
 
-### [Ejemplo 1: Tipos de datos y operador `typeof`](./Ejemplo-01)
+#### [Ejemplo 1: Tipos de datos y operador `typeof`](./Ejemplo-01)
 
 ---
 
@@ -377,7 +377,7 @@ Con respecto al tipo de datos `Number` puedes ejecutar operaciones para cambiar 
 | ++       | Incremento                        | var resultado = 4++   | "resultado" devolvería 5, <br> después de su ejecución |
 | --       | Decremento                        | var resultado = 4--   | "resultado" devolvería 3, <br> después de su ejecución |
 
-### [Ejemplo 2: Operadores](./Ejemplo-02)
+#### [Ejemplo 2: Operadores](./Ejemplo-02)
 
 ---
 
@@ -445,4 +445,4 @@ La precedencia es el orden en el cual los operadores se evaluan al momento de ej
   </tr>
 </table>
 
-### [Ejemplo 3: Precedencia de operadores](./Ejemplo-03)
+#### [Ejemplo 3: Precedencia de operadores](./Ejemplo-03)
