@@ -383,3 +383,85 @@ if(1) { ... }	// Implícito - Contexto lógico
 ```
 
 > En la siguiente sesión se vará más a detalle los operadores lógicos y booleanos
+
+---
+
+## Operadores Básicos
+
+Con respecto al tipo de datos `Number` puedes ejecutar operaciones para cambiar su valor.
+
+| Operador | Descripción                       | Ejemplo Javascript    | Observaciones                                     |
+|----------|-----------------------------------|-----------------------|---------------------------------------------------|
+| +        | Adición                           | var resultado = 4 + 3 |                                                   |
+| -        | Substracción                      | var resultado = 4 - 3 |                                                   |
+| *        | Multiplicación                    | var resultado = 4 * 3 |                                                   |
+| /        | División                          | var resultado = 4 / 2  | "resultado" devolvería 2                                              |
+| %        | "Modulus"<br>Residuo de la división | var resultado = 4 % 2 | "resultado" devolvería 0                          |
+| ++       | Incremento                        | var resultado = 4++   | "resultado" devolvería 5, <br> después de su ejecución |
+| --       | Decremento                        | var resultado = 4--   | "resultado" devolvería 3, <br> después de su ejecución |
+
+---
+
+## Precedencia de Operadores
+
+La precedencia es el orden en el cual los operadores se evaluan al momento de ejecutar la operación.
+
+<table>
+  <tr>
+    <th>Precedencia</th>
+    <th>Operador</th>
+    <th>Descripción</th>
+    <th>Asociatividad</th>
+  </tr>
+  <tr>
+    <td>Primero</td>
+    <td>(...)</td>
+    <td>Agrupación</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Segundo</td>
+    <td>++</td>
+    <td>Incremento</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>--</td>
+    <td>Decremento</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" rowspan="2">Tercero</td>
+    <td class="tg-0lax">+</td>
+    <td class="tg-0lax">Unario más</td>
+    <td class="tg-0lax" rowspan="2">Deracha a izquierda</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">Negación unaria</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Cuarto</td>
+    <td>\*</td>
+    <td>Multiplicación</td>
+    <td rowspan="3">Izquierda a derecha</td>
+  </tr>
+  <tr>
+    <td>/</td>
+    <td>División</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>Módulo</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Quinto</td>
+    <td>+</td>
+    <td>Adición</td>
+    <td rowspan="2">Izquierda a derecha</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>Substracción</td>
+  </tr>
+</table>
