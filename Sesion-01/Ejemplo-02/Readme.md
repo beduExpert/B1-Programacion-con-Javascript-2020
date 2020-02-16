@@ -1,27 +1,45 @@
+## Ejemplo 2: Operadores
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+### Objetivo
 
-## Titulo del Ejemplo
+Practicar los distintos operadores básicos que proporciona JavaScript.
 
-### OBJETIVO
+#### Requisitos
 
-- Lo que esperamos que el alumno aprenda
+Puedes hacer el siguiente ejemplo directo en la consola de Chrome.
 
-#### REQUISITOS
+#### Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+```javascript
+var a = 5;
+var b = 10;
+var c = 15;
 
-#### DESARROLLO
+a + b;  // 15
 
-Agrega las instrucciones generales del ejemplo o reto
+b - a;  // 5
 
-<details>
+a * c;  // 75
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+c / a;  // 3
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+b % a;  // 0
+```
 
+![Operators](./assets/operators-1.png)
 
+Este tipo de operaciones no cambia el valor de las variables `a`, `b` y `c` ya que no estamos usando el operador de asignación `=`. Sin embargo, los operadores de incremento y decremento sí cambian el valor de las variables.
+
+```javascript
+var a = 5;
+var b = 10;
+var c = 15;
+
+c++;  // 16
+
+b--;  // 9
+```
+
+![Operators](./assets/operators-2.png)
+
+> Es bueno aclarar sobre la separación de cada línea en JavaScript con punto y coma `;`. JavaScript no requiere estrictamente usar puntos y comas al final de cada línea, sin embargo vale la pena colocarlos. Ahora, en algún punto, cuando alcances un mejor nivel, podrías considerarlos opcional mientras cumplas con ciertos criterios. [Te compartimos un artículo que habla sobre este tema.](https://flaviocopes.com/javascript-automatic-semicolon-insertion/)

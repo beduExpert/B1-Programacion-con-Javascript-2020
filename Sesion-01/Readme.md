@@ -377,6 +377,8 @@ Con respecto al tipo de datos `Number` puedes ejecutar operaciones para cambiar 
 | ++       | Incremento                        | var resultado = 4++   | "resultado" devolvería 5, <br> después de su ejecución |
 | --       | Decremento                        | var resultado = 4--   | "resultado" devolvería 3, <br> después de su ejecución |
 
+### [Ejemplo 2: Operadores](./Ejemplo-02)
+
 ---
 
 ## Precedencia de Operadores
