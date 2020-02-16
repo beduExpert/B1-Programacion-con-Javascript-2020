@@ -444,3 +444,5 @@ La precedencia es el orden en el cual los operadores se evaluan al momento de ej
     <td>Substracción</td>
   </tr>
 </table>
+
+### [Ejemplo 3: Precedencia de operadores](./Ejemplo-03)

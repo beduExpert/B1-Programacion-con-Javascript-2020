@@ -1,27 +1,33 @@
+## Ejemplo 2: Precedencia de operadores
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+### Objetivo
 
-## Titulo del Ejemplo
+Practicar el orden de precedencia de los operadores en JavaScript.
 
-### OBJETIVO
+#### Requisitos
 
-- Lo que esperamos que el alumno aprenda
+Puedes hacer el siguiente ejemplo directo en la consola de Chrome.
 
-#### REQUISITOS
+#### Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+```javascript
+var a = 5;
+var b = 10;
+var c = 15;
 
-#### DESARROLLO
+a + b * c;  // 155
 
-Agrega las instrucciones generales del ejemplo o reto
+(a + b) * c;  // 255
 
-<details>
+b / a * c;  // 30
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+b / (a * c);  // 0.1333
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+a - b + c;  // 10
 
+a - (b + c);  // -20
+```
 
+Cuando hay distintos operadores con el mismo orden de precedencia se sigue el orden de asociatividad, que puede ir de izquierda a derecha o derecha a izquierda dependiendo del tipo de operador. El uso de paréntesis nos permite controlar el orden de precedencia agrupando las operaciones que queremos que se realicen primero.
+
+![Operators](./assets/precedence.png)
