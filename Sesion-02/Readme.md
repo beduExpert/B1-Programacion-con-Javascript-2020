@@ -24,6 +24,8 @@ Conocer las estructuras que permiten controlar el flujo de ejecución de un prog
 
 	- [`switch`](#switch)
 
+		- [Ejemplo 2: Usando `switch`](./Ejemplo-02)
+
 ---
 
 ## Condicionales
@@ -45,7 +47,7 @@ JavaScript nos proporciona varios operadores lógicos para que podamos realizar 
 | <        | **Menor que:** Devuelve `true` si el operando de la izquierda<br>  es menor que el operando de la derecha.        | 12 < 15                                                       |
 | <=       | **Menor o igual que:**                                                                                            | 15 <= 15                                                      |
 | &&       | **And:** Devuelve `true` si ambas condiciones se cumplen                                                          | 2 > 1 && 1 > 0                                                |
-| \|\|       | **Or:** Devuelve `true` si una de las condiciones se cumplen                                                      | 2 > 1 || 1 < 0                                                |
+| \|\|       | **Or:** Devuelve `true` si una de las condiciones se cumplen                                                      | 2 > 1 \|\| 1 < 0                                                |
 
 ### `if` / `else`
 
