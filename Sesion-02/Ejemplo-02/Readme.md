@@ -1,27 +1,64 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 02`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 2: Usando `switch`
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Conocer la sintaxis de `switch` y determinar en qué casos es mejor usarlo en lugar de `if`/`else`.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <script type="text/javascript" src="./ejemplos-sesion-2.js"></script>
+  </head>
+</html>
+```
 
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Dentro de la misma carpeta creamos un archivo `ejemplos-sesion-2.js` que es donde se trabajarán los ejemplos de esta sesión. Finalmente abre el archivo `index.html` en Chrome e inspecciona la consola para ver los resultados.
 
 
+#### Desarrollo
+
+Vamos a calcular el día de la semana dependiendode su valor númerico empezando en cero.
+
+```javascript
+var day = 2;
+var text;
+
+switch (day) {
+  case 0:
+    text = "Sunday";
+    break;
+  case 1:
+    text = "Monday";
+    break;
+  case 2:
+    text = "Tuesday";
+    break;
+  case 3:
+    text = "Wednesday";
+    break;
+  case 4:
+    text = "Thursday";
+    break;
+  case 5:
+    text = "Friday";
+    break;
+  case 6:
+    text = "Saturday";
+    break;
+  default:
+    text = "Error";
+
+}
+
+console.log(text); // Tuesday
+```
+
+![switch](./assets/switch.png)

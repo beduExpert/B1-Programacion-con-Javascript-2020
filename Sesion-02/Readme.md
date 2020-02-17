@@ -22,6 +22,8 @@ Conocer las estructuras que permiten controlar el flujo de ejecución de un prog
 
 		- [Reto 1: Controles de flujo](./Reto-01)
 
+	- [`switch`](#switch)
+
 ---
 
 ## Condicionales
@@ -67,3 +69,28 @@ if ( /* Condición a evaluar */ ) {
 #### [Ejemplo 1: Primeras condicionales](./Ejemplo-01)
 
 #### [Reto 1: Controles de flujo](./Reto-01)
+
+### `switch`
+
+Esta condicional nos permite ejecutar un sólo bloque de código de varios. Es una buena alternativa cuando tenemos múltiples condicionales `if`/`else`.
+
+```javascript
+switch ( /* Expresión a evaluar*/ ) {
+	case a:
+		/* Código a ejecutar */
+		break;
+	case b:
+		/* Código a ejecutar */
+		break;
+	default:
+		/* Código a ejecutar por default */
+}
+```
+
+- `switch` - La palabra clave que indica que se va a realizar una condicional.
+- `( ... )` - Expresión a evaluar.
+- `case` - Expresa uno de los posibles valores como resultado de la evaluación que se está haciendo.
+- `break` - Detiene la ejecución del bloque y sale del `switch`.
+- `default` - Define qué se debe hacer cuando ninguno de los casos se cumple.
+
+#### [Ejemplo 2: Usando `switch`](./Ejemplo-02)
