@@ -16,9 +16,11 @@ Conocer las estructuras que permiten controlar el flujo de ejecución de un prog
 
 	- [Operadores lógicos](#operadores-lógicos)
 
-	- [`if`/`else`](#if-else)
+	- [`if`/`else`](#if--else)
 
 		- [Ejemplo 1: Primeras condicionales](./Ejemplo-01)
+
+		- [Reto 1: Controles de flujo](./Reto-01)
 
 ---
 
@@ -63,3 +65,5 @@ if ( /* Condición a evaluar */ ) {
 - `else` - Se utiliza para controlar el flujo en caso de que la condición sea `false`. Si se usa `else`, el código dentro de las llaves que le siguen se ejecuta sólo cuando la condición anterior no se cumplió.
 
 #### [Ejemplo 1: Primeras condicionales](./Ejemplo-01)
+
+#### [Reto 1: Controles de flujo](./Reto-01)

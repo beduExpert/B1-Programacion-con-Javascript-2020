@@ -1,27 +1,34 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 1: Operadores lógicos - if/else
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar adecuadamente los operadores lógicos necesarios para controlar el flujo del código.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Vamos a empezar con el último código generado en el [Ejemplo 01](../Ejemplo-01/):
 
-Agrega las instrucciones generales del ejemplo o reto
+```javascript
+var time = 13;
+var greeting;
 
-<details>
+if (time < 12) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good afternoon";
+} else if (time >= 20) {
+  greeting = "Good evening";
+}
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+console.log(greeting) // Good afternoon
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+#### Desarrollo
 
+Nuestro código tiene una pequeña falla, el día sólo tiene 24 horas y no se está tomando en cuenta el caso en el que `time` sea una hora inválida.
+
+Utilizando lo visto hasta el momento sobre operadores lógicos y condicionales, debes crear un nuevo mensaje que será usado cuando `time` sea una hora que no existe en el día.
