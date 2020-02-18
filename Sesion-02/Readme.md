@@ -26,6 +26,8 @@ Conocer las estructuras que permiten controlar el flujo de ejecución de un prog
 
 		- [Ejemplo 2: Usando `switch`](./Ejemplo-02)
 
+- **[Operador Ternario](#operador-ternario)**
+
 ---
 
 ## Condicionales
@@ -96,3 +98,38 @@ switch ( /* Expresión a evaluar*/ ) {
 - `default` - Define qué se debe hacer cuando ninguno de los casos se cumple.
 
 #### [Ejemplo 2: Usando `switch`](./Ejemplo-02)
+
+---
+
+## Operador Ternario
+
+El operador ternario es el único operador en JavaScript que consta de tres operandos. Es una buena alternativa para una condición `if`/`else`, ya que presenta una sintaxis más sencilla.
+
+```javascript
+condición ? expresión_true : expresión_false
+```
+
+La `condición` a evaluar es retorna un booleano al igual que en la condicional `if`. Las expresiones en caso de ser `true` o `false` se colocan en la misma línea sin necesidad de `else` separadas por dos puntos `:`.
+
+```javascript
+var speed = 120;
+var message;
+
+if(speed > 100) {
+	message = "You're going too fast!";
+} else {
+	message = "Under the limit";
+}
+
+console.log(message);	// You're going too fast!
+```
+
+El código anterior lo podemos simplificar usando el operador ternario.
+
+```javascript
+var speed = 120;
+
+var message = speed > 100 ? "You're going too fast!" : "Under the limit";
+
+console.log(message);	// You're going too fast!
+```
