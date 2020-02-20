@@ -1,27 +1,53 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 03`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 2: Ciclo `for`
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Aprender el funcionamiento de los ciclos o bucles para ejecutar código que queremos repetir `n` cantidad de veces.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <script type="text/javascript" src="./ejemplos-sesion-2.js"></script>
+  </head>
+</html>
+```
 
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Dentro de la misma carpeta creamos un archivo `ejemplos-sesion-2.js` que es donde se trabajarán los ejemplos de esta sesión. Finalmente abre el archivo `index.html` en Chrome e inspecciona la consola para ver los resultados.
 
 
+#### Desarrollo
+
+Pensemos que queremos repetir un texto 5 veces y que aparezca en consola:
+
+
+```javascript
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+```
+
+Excelente, funcionará y se reflejarán en la consola.
+
+Ahora bien, si te dijera que queremos repetirlo 200 veces, entonces copiar y pegar cada línea se volvería ineficiente (aparte de odiar al que te dio la instrucción).
+
+¿Qué podemos hacer?
+
+```javascript
+for(var i = 0; i<=200; i++){
+  console.log("Hello World");
+}
+```
+
+Con esto, obtendremos de retorno los 200 `"Hello World"`.
+
+![for](./assets/for-loop.png)
