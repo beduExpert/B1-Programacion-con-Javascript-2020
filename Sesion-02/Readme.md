@@ -2,7 +2,7 @@
 
 ---
 
-# Sesión 1: Controles de flujo
+# Sesión 2: Controles de flujo
 
 ## Objetivos
 
@@ -227,3 +227,7 @@ while(i <= 200) {
 ```
 
 > Si olvidas incrementar la variable `i` dentro del `while` el ciclo nunca termina y se agotan los recursos de memoria.
+
+#### [Reto 2: Números pares](./Reto-02)
+
+#### [Reto 3: Números impares](./Reto-03)
