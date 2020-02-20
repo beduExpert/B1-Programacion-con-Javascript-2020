@@ -1,27 +1,18 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 02`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 2: Números pares
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Dominar el uso de ciclos y operadores lógicos.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+`N/A`
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
 
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+- Crear un ciclo desde 0 hasta 100.
+- Mostrar todos los números pares en este ciclo con `console.log()`

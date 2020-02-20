@@ -34,6 +34,10 @@ Conocer las estructuras que permiten controlar el flujo de ejecución de un prog
 
 	- [Ejemplo 3: Ciclo `for`](./Ejemplo-03)
 
+	- [Reto 2: Números pares](./Reto-02)
+
+	- [Reto 3: Números impares](./Reto-03)
+
 ---
 
 ## Condicionales

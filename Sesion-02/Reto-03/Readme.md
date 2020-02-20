@@ -1,27 +1,20 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 03`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 3: Números primos
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Dominar el uso de ciclos y operadores lógicos.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Haber terminado el [reto 2](../Reto-02).
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
 
-<details>
+- Crear un ciclo desde 0 hasta 100.
+- Mostrar todos los números primos en este ciclo con `console.log()`
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+> Un número primo es número natural mayor a 1 que sólo es divisible entre 1 y sí mismo.
