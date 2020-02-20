@@ -201,7 +201,7 @@ for(var i = 0; i<=50; i++){
 - `Condición`. El segundo valor es la condición, lo que tiene que pasar para terminar la iteración.
 - `Incrementable`. El tercer valor es el incrementable. Cada vez que termina todas las sentencias de ejecución, la variable aumenta en 1. Esto se debe al operando `++`.
 
-#### [Ejemplo 2: Ciclo `for`](./Ejemplo-03)
+#### [Ejemplo 3: Ciclo `for`](./Ejemplo-03)
 
 Otro ciclo es `while`, el cual se repite siempre y cuando la condición especificada sea evaluada como `true`.
 
