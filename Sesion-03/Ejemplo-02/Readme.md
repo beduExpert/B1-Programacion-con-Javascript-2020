@@ -1,27 +1,56 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Ejemplo 02`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 2: Expresión de Función
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Aprender la diferencia entre declaración de función y expresión de función.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <script type="text/javascript" src="./ejemplos-sesion-3.js"></script>
+  </head>
+</html>
+```
 
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Dentro de la misma carpeta creamos un archivo `ejemplos-sesion-3.js` que es donde se trabajarán los ejemplos de esta sesión. Finalmente abre el archivo `index.html` en Chrome e inspecciona la consola para ver los resultados.
 
 
+#### Desarrollo
+
+Ya vimos cómo en las declaraciones de funciones comenzamos con `function` después el nombre y los argumentos de la función dentro de paréntesis.
+
+```javascript
+function whatDoYouDo(job, name) {
+  ...
+}
+```
+
+La sintaxis cambia un poco en una expresión de función.
+
+```javascript
+var whatDoYouDo = function(job, name) {
+  switch (job) {
+    case 'developer':
+      return name + ' develops cool apps.';
+    case 'designer':
+      return name + ' designs awesome websites.';
+    default:
+      return name + ' does something else.'
+  }
+}
+
+console.log(whatDoYouDo('developer', 'John Doe'));
+console.log(whatDoYouDo('designer', 'Jane Doe'));
+console.log(whatDoYouDo('retired', 'Mark Doe'));
+```
+> No es necesario incluir `break` en cada caso del `switch` porque `return` finaliza la función, el siguiente código no es ejecutado.
+
+![whatDoYouDo](./assets/whatDoYouDo.png)
