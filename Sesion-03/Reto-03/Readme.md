@@ -1,27 +1,37 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Reto 03`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 3: Fibonacci
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar adecuadamente los conceptos vistos hasta el momento de funciones y ciclos para solucionar un problema.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Haber terminado el [reto 2](../Reto-02).
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
 
-<details>
+En la serie de Fibonacci:
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+`1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144...`
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Cada elemento se obtiene sumando los dos valores anteriores.
 
+Completar la función `fibonacciSequence` la cuál recibe `limit`, un entero positivo que representa la cantidad de elementos de la serie que queremos.
+
+```javascript
+function fibonacciSequence(limit) {
+  ...
+}
+```
+
+La función debe mostrar en consola los elementos de la serie hasta que `limit` sea alcanzado.
+
+```javascript
+fibonacciSequence(1); // 1
+fibonacciSequence(2); // 1, 1
+fibonacciSequence(5); // 1, 1, 2, 3, 5
+```

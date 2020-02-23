@@ -9,7 +9,7 @@ Conocer los fundamentos del lenguaje para poder interactuar con la web.
 
  - [Sesión 1: Fundamentos de JS](./Sesion-01)
  - [Sesión 2: Controles de flujo](./Sesion-02)
- - [Sesión 3]():
+ - [Sesión 3: Funciones](./Sesion-03)
  - [Sesión 4]():
  - [Sesión 5]():
  - [Sesión 6]():
