@@ -15,6 +15,8 @@ Dividir el trabajo que realiza un programa mediante tareas más pequeñas aislad
 
 	- [Ejemplo 1: Funciones](./Ejemplo-01)
 
+	- [Reto 1: Potenciación](./Reto-01)
+
 ---
 
 ## ¿Qué es una función?
@@ -34,3 +36,5 @@ function myFunction(parameter1, parameter2) {
 - `(parameter1, parameter2)` - Dentro de los paréntesis colocamos los parámetros de la función separados por coma. Los parámetros son variables que se van a usar dentro de la función y no es necesario declararlas nuevamente dentro de la función. Algunas funciones no reciben parámetros, por lo que los paréntesis pueden ir vacios.
 
 #### [Ejemplo 1: Funciones](./Ejemplo-01)
+
+#### [Reto 1: Potenciación](./Reto-01)

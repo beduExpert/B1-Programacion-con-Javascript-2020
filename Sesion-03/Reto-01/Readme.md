@@ -1,27 +1,32 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Reto 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 1: Potenciación
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar adecuadamente los conceptos vistos hasta el momento de funciones y ciclos para solucionar un problema.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+`N/A`
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
 
-<details>
+Crear una función `power` que recibe dos argumentos `base` y `exponent`. La función debe retornar el resultado de elevar `base` a la potencia `exponent`.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+function power(base, exponent) {
+  ...
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Recuerda que en la potenciación el `exponent` indica cuántas veces se debe multiplicar `base` por sí mismo.
 
+```javascript
+3 ^ 3 = 3 * 3 * 3
+3 ^ 3 = 27
+```
+
+> Evitar usar el operador de exponenciación `**`
