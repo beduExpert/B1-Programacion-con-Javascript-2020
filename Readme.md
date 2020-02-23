@@ -21,4 +21,4 @@ Conocer los fundamentos del lenguaje para poder interactuar con la web.
 
  - [Sesión 7: Introducción al DOM](./Sesion-07)
 
- - [Sesión 8: Manipulación del DOM](./Sesion-08):
+ - [Sesión 8: Manipulación del DOM](./Sesion-08)
