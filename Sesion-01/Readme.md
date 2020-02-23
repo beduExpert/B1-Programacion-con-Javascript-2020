@@ -38,6 +38,8 @@ Conocer la trayectoria de JavaScript, por qué es una buena opción, cómo apren
 
   - [Ejemplo 3: Precedencia de operadores](./Ejemplo-03)
 
+  - [Reto 1: Precedencia de operadores](./Reto-01)
+
 ---
 
 ## ¿Por qué Javascript?
@@ -456,3 +458,5 @@ La precedencia es el orden en el cual los operadores se evaluan al momento de ej
 </table>
 
 #### [Ejemplo 3: Precedencia de operadores](./Ejemplo-03)
+
+#### [Reto 1: Precedencia de operadores](./Reto-01)

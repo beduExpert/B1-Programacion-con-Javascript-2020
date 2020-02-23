@@ -2,7 +2,7 @@
 
 ---
 
-## Ejemplo 2: Precedencia de operadores
+## Ejemplo 3: Precedencia de operadores
 
 ### Objetivo
 

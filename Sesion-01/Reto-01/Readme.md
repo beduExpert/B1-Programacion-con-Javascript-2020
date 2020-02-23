@@ -1,27 +1,37 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Reto 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 1: Precedencia de operadores
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivo
 
-#### REQUISITOS 
+Practicar el orden de precedencia de los operadores en JavaScript.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Puedes hacer el siguiente ejemplo directo en la consola de Chrome.
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
 
-<details>
+Intenta calcular el resultado de las siguientes operaciones antes de ver el resultado en la consola.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+var a = 5;
+var b = 10;
+var c = 15;
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+(3 + b) * c / a * 2;
 
+((a + b * c) / 5) * 2;
+
+b / a + 2 * c;
+
+(a + b + c / c) * a;
+
+((3 * a) / c) + a + b + c;  
+
+a - (b + c) * a / 1;
+```
+
+Puedes consultar la tabla de precedencia si no estás seguro de qué operación hacer primero.
