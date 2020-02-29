@@ -25,7 +25,7 @@ Dividir el trabajo que realiza un programa mediante tareas más pequeñas aislad
 
 	- [Ejemplo 3: IIFE](./Ejemplo-03)
 
-	- [Reto 2: Calcular promedio](./Reto-02)
+	- [Reto 2: Número mayor](./Reto-02)
 
 	- [Reto 3: Fibonacci](./Reto-03)
 
@@ -91,6 +91,6 @@ Las expresiones de funciones ejecutadas inmediatamente o **IIFE** por sus siglas
 
 Es común ver este patrón en frameworks o librerías de JavaScript. Al envolver el código en un IIFE están aislando las variables del resto del código y se aseguran que se ejecuta sin necesidad de que el usuario lo tenga que hacer.
 
-#### [Reto 2: Calcular promedio](./Reto-02)
+#### [Reto 2: Número mayor](./Reto-02)
 
 #### [Reto 3: Fibonacci](./Reto-03)

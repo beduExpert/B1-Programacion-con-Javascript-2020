@@ -2,7 +2,7 @@
 
 ---
 
-## Reto 2: Calcular promedio
+## Reto 2: Número mayor
 
 ### Objetivos
 
@@ -14,12 +14,10 @@ Haber terminado el [reto 1](../Reto-01).
 
 #### Desarrollo
 
-Completar la función `calculateAverage` la cual recibe `numbers`, un arreglo de _n_ cantidad de enteros. La función debe retornar el promedio de todos los enteros que tenga `numbers`.
+Completar la función `getLargerInt` la cual recibe dos números enteros. La función debe retornar el número mayor.
 
 ```javascript
-function calculateAverage(numbers) {
+function getLergetInt(number1, number2) {
   ...
 }
 ```
-
-> Para calcular el promedio se divide la suma de todos los elementos entre el número total de elementos.

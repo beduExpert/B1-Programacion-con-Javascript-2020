@@ -1,27 +1,73 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 1: Arreglos
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Conocer la sintaxis y cómo usar arreglos en JavaScript.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <script type="text/javascript" src="./ejemplos-sesion-4.js"></script>
+  </head>
+</html>
+```
 
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Dentro de la misma carpeta creamos un archivo `ejemplos-sesion-4.js` que es donde se trabajarán los ejemplos de esta sesión. Finalmente abre el archivo `index.html` en Chrome e inspecciona la consola para ver los resultados.
 
 
+#### Desarrollo
+
+Vamos a crear una función que reciba como argumento un arreglo con _n_ cantidad de enteros, dicha función debe retornar un nuevo arreglo con todos los elementos del primer arreglo multiplicados por dos.
+
+```javascript
+[1, 3, 4, 7, 2, 1, 9, 0]  // Arreglo inicial
+
+[2, 6, 8, 14, 4, 2, 18, 0]  // Resultado esperado
+```
+
+Una forma de resolverlo es recorriendo cada elemento del arreglo con un ciclo `for`, multiplicando el número por dos y guardándalo en un nuevo arreglo para retornarlo al final.
+
+```javascript
+function multiplyByTwo(numbers) {
+    var multipliedNumbers = [];
+
+    for(var i = 0; i < numbers.length; i++) {
+      multipliedNumbers.push(numbers[i] * 2);
+    }
+
+    return multipliedNumbers;
+}
+```
+
+> El método `push()` agrega un nuevo elemento al final de un arreglo.
+
+Como estamos comparando que `i < numbers.length` el ciclo va a terminar con el último elemento del arreglo.
+
+```javascript
+function multiplyByTwo(numbers) {
+    var multipliedNumbers = [];
+
+    for(var i = 0; i < numbers.length; i++) {
+      multipliedNumbers.push(numbers[i] * 2);
+    }
+
+    return multipliedNumbers;
+}
+
+var input = [1, 3, 4, 7, 2, 1, 9, 0];
+
+var output = multiplyByTwo(input);
+
+console.log(input); // [1, 3, 4, 7, 2, 1, 9, 0]
+console.log(output);  // [2, 6, 8, 14, 4, 2, 18, 0]
+```
+
+![multiplyByTwo](./assets/multiplyByTwo.png)
