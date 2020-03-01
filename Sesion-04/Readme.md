@@ -18,6 +18,10 @@ con otros tipos de datos
 
 	- [Reto 1: Calcular promedio](./Reto-01)
 
+- **[Objetos](#objetos)**
+
+	- [Ejemplo 2: Transformando objetos en arreglos](./Ejemplo-02)
+
 ---
 
 ## Arreglos
@@ -84,3 +88,51 @@ console.log(colors.length);	// 3
 #### [Reto 1: Calcular promedio](./Reto-01)
 
 ---
+
+## Objetos
+
+En los arreglos utilizamos un índice numérico para acceder a un elemento de la colección. Con los objetos en lugar de usar valores numéricos como índice utilizamos propiedades con nombre y valor, el cual puede ser cualquier tipo de dato. Para crear un objeto utilizamos llaves `{}` separando cada propiedad con coma.
+
+```javascript
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990
+}
+```
+
+Se puede acceder al valor de una propiedad de dos formas. La primera es con un punto después del nombre del objeto seguido del nombre de la propiedad que queremos leer, la segunda es usando corchetes `[]` similar a como se hace con los arreglos pero pasando un string con el nombre de la propiedad en lugar de un `index`.
+
+```javascript
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990
+}
+
+console.log(john.firstName);	// 'John'
+
+console.log(john['lastName']);	// 'Doe'
+```
+
+De igual forma se puede cambiar el valor de las propiepdades de los objetos.
+
+```javascript
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990
+}
+
+console.log(john.firstName);	// 'John'
+
+john.firstName = 'Jane';
+
+console.log(john.firstName);	// 'Jane'
+
+john['firstName'] = 'Joe';
+
+console.log(john['firstName']);	// 'Joe'
+```
+
+#### [Ejemplo 2: Transformando objetos en arreglos](./Ejemplo-02)
