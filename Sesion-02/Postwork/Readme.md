@@ -30,17 +30,10 @@ Algunos ejemplos para el Todo App podrían ser:
 * Como usuario quiero buscar una tarea específica.  
 * Como usuario quiero scrollear cuando la lista es muy larga.  
 
-
-
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/n3JFzxS/Postwork-S2-2.png" alt="Postwork-S2-2" border="0"></a>  
 
 Con esto tenemos una lista de features que queremos en nuestra aplicación. Ahora podemos decidir cuáles son obligatorias tener en nuestra aplicación y cuáles podemos dejar para después e incluir como mejoras de la aplicación.  
 
 Para reforzar lo visto en clase se recomienda leer el <a href="https://eloquentjavascript.net/02_program_structure.html" target="_blank">capítulo 2</a> del siguiente libro interactivo (recurso en inglés) y resolver los tres ejercicios que vienen al final del capítulo:    
 
 <a href="https://eloquentjavascript.net/" target="_blank">**Eloquent JavaScript**</a>
-
-
-
-
-
-
