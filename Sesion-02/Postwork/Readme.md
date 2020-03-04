@@ -13,7 +13,7 @@ Mucho antes de empezar a programar debemos analizar qué es lo que debemos hacer
 
 Lo primero es hacer un mockup de la aplicación. Un bosquejo que se puede realizar con papel y lápiz, y puede ser tan detallado o minimalista como gustes. El objetivo es plasmar en físico las ideas que tienes sobre cómo debe verse y qué quieres que haga.  
 
-![](https://ibb.co/SmXgcb6)
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/9490h6p/Postwork-S2.png" alt="Postwork-S2" border="0"></a>  
 
 Lo siguiente que puedes hacer es crear user stories. Los user stories son descripciones pequeñas y simples de una funcionalidad o feature desde el punto de vista de la persona que va a hacer uso de dicho feature.  Normalmente esa persona es el usuario final, pero también puede ser alguien con rol de administrador o permisos especiales.   
 
