@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Conocer la sintaxis y cómo usar arreglos en JavaScript.
+Distinguir la sintaxis y correcta implementación de los arreglos en JavaScript.
 
 #### Requisitos
 

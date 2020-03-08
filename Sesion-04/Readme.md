@@ -5,8 +5,7 @@
 
 ## Objetivos
 
-Conocer los objetos y sus principales características, así como las diferencias
-con otros tipos de datos
+Mostrar las principales características de los objetos y arreglos, así como las diferencias con otros tipos de datos
 
 ---
 
