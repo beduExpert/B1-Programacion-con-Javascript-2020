@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Usaremos el operador `typeof` para conocer los distintos tipos de datos de manera práctica.
+Usaremos el operador `typeof` para distinguir los distintos tipos de datos de manera práctica.
 
 #### Requisitos
 

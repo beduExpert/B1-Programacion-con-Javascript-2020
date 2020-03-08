@@ -6,7 +6,7 @@
 
 ## Objetivos
 
-Conocer la trayectoria de JavaScript, por qué es una buena opción, cómo aprender y entender los fundamentos.
+Analizar la trayectoria de JavaScript, evaluar por qué es una buena opción aprenderlo y usar sus fundamentos.
 
 ---
 
