@@ -17,7 +17,21 @@ Haber terminado el [reto 1](../Reto-01).
 Completar la función `getLargerInt` la cual recibe dos números enteros. La función debe retornar el número mayor.
 
 ```javascript
-function getLergetInt(number1, number2) {
+function getLergerInt(number1, number2) {
   ...
 }
 ```
+
+<details>
+  <summary>Solución</summary>
+
+```javascript
+function getLergerInt(number1, number2) {
+  if(number1 > number2) {
+    return number1
+  } else {
+    return number2
+  }
+}
+```
+</details>

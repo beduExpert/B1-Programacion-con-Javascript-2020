@@ -37,3 +37,19 @@ console.log( pluck(singers, 'band') );
 console.log( pluck(singers, 'born') );
 // [1948, 1950, 1967, 1964]
 ```
+
+<details>
+  <summary>Solución</summary>
+
+```javascript
+function pluck(list, propertyName) {
+  var values = [];
+
+  for (var i = 0; i < list.length; i++) {
+    values.push( list[i][propertyName] );
+  }
+
+  return values;
+}
+```
+</details>

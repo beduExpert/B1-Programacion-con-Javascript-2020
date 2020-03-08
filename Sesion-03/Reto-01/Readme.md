@@ -30,3 +30,19 @@ Recuerda que en la potenciación el `exponent` indica cuántas veces se debe mul
 ```
 
 > Evitar usar el operador de exponenciación `**`
+
+<details>
+  <summary>Solución</summary>
+
+```javascript
+function power(base, exponent) {
+  var result = 1;
+
+  for(var i = 0; i < exponent; i++) {
+    result *= base; // Same as: result = result * base;
+  }
+
+  return result;
+}
+```
+</details>

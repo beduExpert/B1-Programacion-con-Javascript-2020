@@ -31,3 +31,19 @@ function keyValuePairs(obj) {
 Para este reto vamos a crear una función que haga lo opuesto. Es decir, la función recibe
 un arreglo con pares `[key, value]` y debe retornar un objeto con sus respectivas propiedades
 y valores.
+
+<details>
+  <summary>Solución</summary>
+
+```javascript
+function arrayToObject(arr) {
+  var obj = {};
+
+  for(var i = 0; i < arr.length; i++) {
+    obj[arr[i][0]] = arr[i][1]
+  }
+
+  return obj;
+}
+```
+</details>

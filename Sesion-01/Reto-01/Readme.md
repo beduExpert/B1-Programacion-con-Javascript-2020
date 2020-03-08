@@ -35,3 +35,21 @@ a - (b + c) * a / 1;
 ```
 
 Puedes consultar la tabla de precedencia si no estás seguro de qué operación hacer primero.
+
+<details>
+  <summary>Solución</summary>
+
+```javascript
+(3 + b) * c / a * 2; // 78
+
+((a + b * c) / 5) * 2; // 62
+
+b / a + 2 * c; // 32
+
+(a + b + c / c) * a; // 80
+
+((3 * a) / c) + a + b + c; // 31  
+
+a - (b + c) * a / 1; // -120
+```
+</details>
