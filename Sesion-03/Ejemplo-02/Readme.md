@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Aprender la diferencia entre declaración de función y expresión de función.
+Analizar la diferencia entre declaración de función y expresión de función.
 
 #### Requisitos
 

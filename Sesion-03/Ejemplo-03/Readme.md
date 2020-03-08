@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Conocer otra forma de utilizar expresiones de función al ejecutarlas inmediatamente.
+Evaluar otra forma de utilizar expresiones de función al ejecutarlas inmediatamente.
 
 #### Requisitos
 

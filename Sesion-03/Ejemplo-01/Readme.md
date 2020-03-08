@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Conocer la sintaxis y cómo usar funciones en JavaScript.
+Distinguir la sintaxis de las funciones y su correcta implementación.
 
 #### Requisitos
 
