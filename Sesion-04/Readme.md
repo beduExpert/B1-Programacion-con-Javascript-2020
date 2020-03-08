@@ -22,6 +22,12 @@ con otros tipos de datos
 
 	- [Ejemplo 2: Transformando objetos en arreglos](./Ejemplo-02)
 
+	- [Reto 2: Arreglo a objeto](./Reto-02)
+
+	- [Objetos y métodos](#objetos-y-métodos)
+
+		- [Reto 3: Extraer una lista de propiedades](./Reto-03)
+
 ---
 
 ## Arreglos
@@ -136,3 +142,105 @@ console.log(john['firstName']);	// 'Joe'
 ```
 
 #### [Ejemplo 2: Transformando objetos en arreglos](./Ejemplo-02)
+
+#### [Reto 2: Arreglo a objeto](./Reto-02)
+
+### Objetos y métodos
+
+Ya mencionamos que las propiedades de los objetos pueden contener cualquier tipo
+de dato, esto incluye expresiones de funciones, en cuyo caso deja de llamarse propiedad
+y se conoce como método.
+
+```javascript
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990,
+	calculateAge: function(birthYear) {
+		var today = new Date();
+		var year = today.getFullYear();
+
+		return year - birthYear;
+	}
+}
+```
+
+Acabamos de agregar el método `calculateAge`, como vemos es una expresión de función,
+una función anónima que recibe `birthYear` como argumento. Este método nos regresa
+la edad actual de John.
+
+```javascript
+console.log( john.calculateAge(1990) );	// 30
+```
+
+La variable `today` es un objeto de la clase `Date()` de JavaScript. A su vez vemos
+que este objeto tiene un método `getFullYear()` el cual nos regresa el año.
+
+No necesitamos pasar el argumento `birthYear` al método `calculateAge` porque ya existe
+como propiedad del objeto `john`.
+
+```javascript
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990,
+	calculateAge: function() {
+		var today = new Date();
+		var year = today.getFullYear();
+
+		return year - this.birthYear;
+	}
+}
+```
+
+El keyword `this` hace referencia al mismo objeto, por lo que cuando decimos `this.birthYear`
+es como decir `john.birthYear`. Lo usamos cuando queremos hacer referencia a
+una propiedad o método del mismo objeto, e incluso para asignar nuevas propiedades.
+
+```javascript
+var john = {
+	firstName: 'John',
+	lastName: 'Doe',
+	birthYear: 1990,
+	calculateAge: function(birthYear) {
+		var today = new Date();
+		var year = today.getFullYear();
+
+		this.age = year - this.birthYear;
+	}
+}
+```
+
+Ahora el método `calculateAge` en lugar de retornar la edad la va a guardar en una nueva
+propiedad llamada `age.`
+
+```javascript
+console.log( john );
+/*
+*	Valor actual
+*	{
+*		firstName: "John",
+*		lastName: "Doe",
+*		birthYear: 1990,
+*		calculateAge: ƒ
+*	}
+*/
+
+john.calculateAge();
+
+console.log( john );
+/*
+*	Después de llamar el método calculateAge()
+*	{
+*		firstName: "John",
+*		lastName: "Doe",
+*		birthYear: 1990,
+*		age: 30,
+*		calculateAge: ƒ
+*	}
+*/
+```
+
+#### [Reto 3: Extraer una lista de propiedades](./Reto-03)
+
+En este punto nos damos cuenta que los arreglos también tienen métodos como `push()` que agrega un elemento al final del arreglo o `pop()` que elimina el último elemento del arreglo. También los strings tienen propiedades como `length` que retorna la longitud del string, o incluso métodos como `search()` que permite buscar un valor específico dentro del string. Por eso es común escuchar que todo en JavaScript se comporta como un objeto.

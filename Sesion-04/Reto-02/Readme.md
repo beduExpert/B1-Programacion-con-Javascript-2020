@@ -1,27 +1,33 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 02`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 2: Arreglo a objeto
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar adecuadamente los conceptos vistos hasta el momento de funciones y ciclos para solucionar un problema.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+En el Ejemplo 2 se creó una función para transformar un objeto en un arreglo con los pares
+`[key, value]` por cada propiedad.
 
-Agrega las instrucciones generales del ejemplo o reto
+```javascript
+function keyValuePairs(obj) {
+    var keys = Object.keys(obj);
+    var pairs = [];
 
-<details>
+    for(var i = 0; i < keys.length; i++) {
+      pairs.push( [keys[i], obj[keys[i]]] )
+    }
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+    return pairs;
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+#### Desarrollo
 
+Para este reto vamos a crear una función que haga lo opuesto. Es decir, la función recibe
+un arreglo con pares `[key, value]` y debe retornar un objeto con sus respectivas propiedades
+y valores.

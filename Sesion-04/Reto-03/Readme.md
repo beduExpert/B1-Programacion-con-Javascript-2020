@@ -1,27 +1,39 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 03`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 3: Extraer una lista de propiedades
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar adecuadamente los conceptos vistos hasta el momento de funciones y ciclos para solucionar un problema.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+`N/A`
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
 
-<details>
+Completar la función `pluck` que extrae una lista de propiedades de un arreglo de objetos.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+var singers = [
+  { name: 'Steven Tyler', band: 'Aerosmith', born: 1948 },
+  { name: 'Karen Carpenter', band: 'The Carpenters', born: 1950 },
+  { name: 'Kurt Cobain', band: 'Nirvana', born: 1967 },
+  { name: 'Chris Cornell', band: 'Soundgarden', born: 1964 },
+];
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+function pluck(list, propertyName) {
+  ...
+}
 
+console.log( pluck(singers, 'name') );
+// ["Steven Tyler", "Karen Carpenter", "Kurt Cobain", "Chris Cornell"]
+
+console.log( pluck(singers, 'band') );
+// ["Aerosmith", "The Carpenters", "Nirvana", "Soundgarden"]
+
+console.log( pluck(singers, 'born') );
+// [1948, 1950, 1967, 1964]
+```
