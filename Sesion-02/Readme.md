@@ -6,7 +6,7 @@
 
 ## Objetivos
 
-Conocer las estructuras que permiten controlar el flujo de ejecución de un programa o aplicación
+Distinguir las distintas estructuras que permiten controlar el flujo de ejecución de un programa o aplicación
 
 ---
 

@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Conocer la sintaxis de `switch` y determinar en qué casos es mejor usarlo en lugar de `if`/`else`.
+Analizar la sintaxis de `switch` y determinar en qué casos es mejor usarlo en lugar de `if`/`else`.
 
 #### Requisitos
 

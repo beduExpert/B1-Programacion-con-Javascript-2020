@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Aprender el funcionamiento de los ciclos o bucles para ejecutar código que queremos repetir `n` cantidad de veces.
+Analizar el funcionamiento de los ciclos o bucles para ejecutar código que queremos repetir `n` cantidad de veces.
 
 #### Requisitos
 
