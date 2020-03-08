@@ -15,13 +15,9 @@ Construir clases con el objetivo de controlar el instanciamiento de su código.
 
 - **[Programación orientada a objetos](#programación-orientada-a-objetos)**
 
-	- [Ejemplo 2: Transformando objetos en arreglos](./Ejemplo-02)
+	- [Herencia](#herencia)
 
-	- [Reto 2: Arreglo a objeto](./Reto-02)
-
-	- [Objetos y métodos](#objetos-y-métodos)
-
-		- [Reto 3: Extraer una lista de propiedades](./Reto-03)
+		- [Ejemplo 1: Function constructor](./Ejemplo-01)
 
 ---
 
@@ -78,7 +74,7 @@ En la sesión anterior creamos un objeto que representa información personal de
 var john = {
 	name: 'John',
 	birthYear: 1990,
-	isMarried: false
+	job: 'Developer'
 }
 ```
 
@@ -113,3 +109,13 @@ Este es un objeto `Person` que podemos utilzar como plantilla para crear varios 
 ![Instances](./assets/instances.png)
 
 De esta forma podemos crear los objetos que queramos a partir de la plantilla. En este ejemplo decimos que `john`, `mark` y `jane` son instancias del constructor `Person`. Todas las instancias tienen las mismas propiedades y métodos del constructor.
+
+#### [Ejemplo 1: Function constructor](./Ejemplo-01)
+
+### Herencia
+
+En términos simples la herencia es cuando un objeto está basado en otro objeto, es decir, un objeto puede acceder a las propiedades y métodos de otro objeto.
+
+![Inheritance](./assets/inheritance.png)
+
+El constructor `Developer` tiene propiedades y métodos únicos cómo skills que domina, años de experiencia y el skill de su preferencia. Como `Developer` también es una persona, es decir, tambíen tiene nombre, edad y un empleo, el constructor `Developer` puede heredar del constructor `Person`, teniendo acceso a las mismas propiedades y métodos.
