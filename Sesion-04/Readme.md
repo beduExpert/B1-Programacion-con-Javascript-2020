@@ -24,9 +24,9 @@ con otros tipos de datos
 
 	- [Reto 2: Arreglo a objeto](./Reto-02)
 
-	- [Objetos y métodos](#objetos-y-métodos)
+- **[Objetos y Métodos](#objetos-y-métodos)**
 
-		- [Reto 3: Extraer una lista de propiedades](./Reto-03)
+	- [Reto 3: Extraer una lista de propiedades](./Reto-03)
 
 ---
 
@@ -145,7 +145,9 @@ console.log(john['firstName']);	// 'Joe'
 
 #### [Reto 2: Arreglo a objeto](./Reto-02)
 
-### Objetos y métodos
+---
+
+## Objetos y métodos
 
 Ya mencionamos que las propiedades de los objetos pueden contener cualquier tipo
 de dato, esto incluye expresiones de funciones, en cuyo caso deja de llamarse propiedad

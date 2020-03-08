@@ -15,9 +15,9 @@ Construir clases con el objetivo de controlar el instanciamiento de su código.
 
 - **[Programación orientada a objetos](#programación-orientada-a-objetos)**
 
-	- [Herencia](#herencia)
+	- [Ejemplo 1: Function constructor](./Ejemplo-01)
 
-		- [Ejemplo 1: Function constructor](./Ejemplo-01)
+- **[Herencia](#herencia)**
 
 ---
 
