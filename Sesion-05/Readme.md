@@ -5,7 +5,7 @@
 
 ## Objetivos
 
-Construir clases con el objetivo de controlar el instanciamiento de su código.
+Crear constructores a partir de los cuales se puedan instanciar múltiples objetos.
 
 ---
 
@@ -18,6 +18,10 @@ Construir clases con el objetivo de controlar el instanciamiento de su código.
 	- [Ejemplo 1: Function constructor](./Ejemplo-01)
 
 - **[Herencia](#herencia)**
+
+	- [Ejemplo 2: Heredando propiedades](./Ejemplo-02)
+
+- **[Prototype](#prototype)**
 
 ---
 
@@ -64,7 +68,7 @@ a objetos, también incorpora capacidades de programación funcional.
 
 ---
 
-## Programación Orientada a Objetos
+## Programación orientada a objetos
 
 También conocido como OOP por sus siglas en inglés (Object Oriented Programming), es un paradigma imperativo que hace fuerte uso de las propiedades y métodos de los objetos. Múltiples objetos interactuan entre ellos para construir aplicaciones complejas. Permite estructurar las aplicaciones en módulos, una buena forma de organizar y mantener limpio el código.
 
@@ -104,7 +108,7 @@ Hay una mejor forma de hacer esto. Imagina una plantilla o un template a partir 
 
 ![Constructor](./assets/constructor.png)
 
-Este es un objeto `Person` que podemos utilzar como plantilla para crear varios objetos que representen personas. En otros lenguajes de programación a esto se le conoce como clase, en JavaScript le llamamos `Constructor` o `Prototype`.
+Este es un objeto `Person` que podemos utilzar como plantilla para crear varios objetos que representen personas. En otros lenguajes de programación a esto se le conoce como clase, en JavaScript le llamamos `Constructor`.
 
 ![Instances](./assets/instances.png)
 
@@ -112,10 +116,24 @@ De esta forma podemos crear los objetos que queramos a partir de la plantilla. E
 
 #### [Ejemplo 1: Function constructor](./Ejemplo-01)
 
-### Herencia
+---
+
+## Herencia
 
 En términos simples la herencia es cuando un objeto está basado en otro objeto, es decir, un objeto puede acceder a las propiedades y métodos de otro objeto.
 
 ![Inheritance](./assets/inheritance.png)
 
 El constructor `Developer` tiene propiedades y métodos únicos cómo skills que domina, años de experiencia y el skill de su preferencia. Como `Developer` también es una persona, es decir, tambíen tiene nombre, edad y un empleo, el constructor `Developer` puede heredar del constructor `Person`, teniendo acceso a las mismas propiedades y métodos.
+
+#### [Ejemplo 2: Heredando propiedades](./Ejemplo-02)
+
+---
+
+## Prototype
+
+En JavaScript la herencia es posible gracias a una propiedad con la que cuentan todos los objetos llamada `Prototype`. Si queremos que las instancias hereden un método lo podemos colocar en el `Prototype` del constructor. Veamos un ejemplo con el constructo `Person` y la instancia `john` con la que hemos trabajado anteriormente.
+
+![Prototype Chain](./assets/prototype-chain.png)
+
+Como `john` es una instancia de `Person`, este tiene acceso al método `calculateAge()` aunque no se encuentre dentro del prototype de `john`. Cuando llamamos a un método, JavaScript busca primero en el prototype del objeto, si no lo encuentra busca en el prototype del constructor con el que fue instanciado, y así sucesivamente hasta llegar al constructor `Object`, del cuál se instancian todos los objetos en JavaScript. A esto se le conoce como **prototype chain**.

@@ -6,7 +6,7 @@
 
 ### Objetivo
 
-Aprender a usar constructores para instanciar objetos.
+Crear constructores para instanciar objetos.
 
 #### Requisitos
 
