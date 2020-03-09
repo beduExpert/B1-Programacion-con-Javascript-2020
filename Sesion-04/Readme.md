@@ -203,7 +203,7 @@ var john = {
 	firstName: 'John',
 	lastName: 'Doe',
 	birthYear: 1990,
-	calculateAge: function(birthYear) {
+	calculateAge: function() {
 		var today = new Date();
 		var year = today.getFullYear();
 

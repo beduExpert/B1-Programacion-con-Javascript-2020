@@ -23,6 +23,8 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 - **[Prototype](#prototype)**
 
+	- [Ejemplo 3: Heredando métodos](./Ejemplo-03)
+
 ---
 
 ## Paradigma de programación
@@ -137,3 +139,5 @@ En JavaScript la herencia es posible gracias a una propiedad con la que cuentan 
 ![Prototype Chain](./assets/prototype-chain.png)
 
 Como `john` es una instancia de `Person`, este tiene acceso al método `calculateAge()` aunque no se encuentre dentro del prototype de `john`. Cuando llamamos a un método, JavaScript busca primero en el prototype del objeto, si no lo encuentra busca en el prototype del constructor con el que fue instanciado, y así sucesivamente hasta llegar al constructor `Object`, del cuál se instancian todos los objetos en JavaScript y [contiene varios métodos](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object). A esto se le conoce como **prototype chain**.
+
+#### [Ejemplo 3: Heredando métodos](./Ejemplo-03)
