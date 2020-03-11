@@ -1,21 +1,42 @@
 
-[`Programación con JavaScript`](../Readme.md) > `Postwork`
+[`Programación con JavaScript`](../Readme.md) > [`Sesión 01`](../Readme.md) > `Postwork`
+
+---
 
 ## Postwork
 
-### OBJETIVO
+### Objetivo
 
-- Desarrollar la primera la planeación del proyecto que se desarrollará a lo largo del módulo.  
+Definir el proyecto que se desarrollará a lo largo del módulo.
 
-#### DESARROLLO
+#### Desarrollo   
 
-Ahora que tienes una idea más clara de los temas que serán abordados en este módulo es momento de empezar a planear tu proyecto personal. Si necesitas un poco de inspiración puedes revisar esta <a href="https://learnvanillajs.com/projects/" target="_blank">lista de ideas</a>.  
+Una vez tengas definido lo que quieres realizar debes escoger un nombre para el proyecto y crear un repositorio en **GitHub** para alojar el proyecto y llevar un control en sus versiones.
 
-Todos los proyectos que se mencionan en este recurso pueden ser desarrollados sin el uso de librerías o frameworks. Toma en cuenta que tienen distintos niveles de dificultad, algunos son considerablemente sencillos, por lo que puedes combinar distintas ideas para crear un proyecto más robusto. Algunos otros requieren de conocimientos previos en temas que no son abordados en este módulo, pero no significa que no los puedas realizar. Puedes desarrollar una parte y revisar con tu experto alternativas para la parte faltante, o bien, te puede proporcionar recursos que te ayuden a terminar el proyecto completo.   
+Después de iniciar sesión, en la esquina superior derecha encontrarás un menú desplegable con la opción **Nuevo repositorio**
 
-Una vez tengas definido lo que quieres realizar puedes crear un repositorio en **GitHub** para alojar tu proyecto. Revisa la guía oficial si tienes dudas de <a href="https://help.github.com/es/github/getting-started-with-github/create-a-repo" target="_blank">cómo crear un repositorio</a>.  
+![Repo create](https://help.github.com/assets/images/help/repository/repo-create.png).
 
-* Para reforzar lo visto en clase se recomienda leer la <a href="https://eloquentjavascript.net/00_intro.html" target="_blank">introducción</a> y el <a href="https://eloquentjavascript.net/01_values.html" target="_blank">capítulo 1</a> del siguiente libro interactivo (recurso en inglés):  
+El nombre del repositorio debe ser en minúsculas, con guiones en lugar de espacios y sin caracteres especiales. Por ejemplo: *hello-world*.
 
-<a href="https://eloquentjavascript.net/" target="_blank">**Eloquent JavaScript**</a>  
+![Create repo name](https://help.github.com/assets/images/help/repository/create-repository-name.png)
 
+La descripción debe ser breve e incluir a grandes rasgos de qué trata el proyecto. Por ejemplo: *Aplicación para crear recordatorios*.
+
+![Create repo desc](https://help.github.com/assets/images/help/repository/create-repository-desc.png)
+
+Selecciona el repositorio como público.
+
+![Create repo public](https://help.github.com/assets/images/help/repository/create-repository-public-private.png)
+
+Selecciona **Inicializar este repositorio con un README**.
+
+![Create repo init readme](https://help.github.com/assets/images/help/repository/create-repository-init-readme.png)
+
+Finalmente haz click en **Crear repositorio**.
+
+#### Opcional
+
+Para reforzar lo visto en clase se recomienda leer la [introducción](https://eloquentjavascript.net/00_intro.html) (historia de JavaScript) y el [capítulo 1](https://eloquentjavascript.net/01_values.html) (variables, tipos de datos y operadores) del siguiente libro interactivo:
+
+**[Eloquent JavaScript](https://eloquentjavascript.net/)**
