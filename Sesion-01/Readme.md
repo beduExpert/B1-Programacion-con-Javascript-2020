@@ -40,6 +40,10 @@ Analizar la trayectoria de JavaScript, evaluar por qué es una buena opción apr
 
   - [Reto 1: Precedencia de operadores](./Reto-01)
 
+- **[Reto final](./Reto-final)**
+
+- **[Postwork](./Postwork)**
+
 ---
 
 ## ¿Por qué Javascript?
