@@ -1,13 +1,14 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Postwork`
 
-[`Programación con JavaScript`](../Readme.md) > `Postwork`
+---
 
 ## Postwork
 
-### OBJETIVO
+### Objetivo
 
-- Crear variables y funciones que se pueden integrar al proyecto postwork. Poner en práctica conceptos utilizados en sesiones anteriores.     
+Crear variables y funciones que se pueden integrar al proyecto postwork. Poner en práctica conceptos utilizados en sesiones anteriores.     
 
-#### DESARROLLO
+#### Desarrollo
 
 Del ejemplo anterior se tomarán los tres primeros user stories:  
 
@@ -50,6 +51,10 @@ Recuerda que el nombre tanto de tus variables como funciones deben ser descripti
 
 Este es un ejemplo de cómo puedes ir integrando lo visto hasta ahora en tu proyecto. Puedes ir creando las variables que consideres necesarias y tus primeras funciones que deban manipular un valor.  
 
-Para reforzar lo visto en clase se recomienda resolver los ejercicios que vienen al final del <a href="https://eloquentjavascript.net/03_functions.html#h_TcUD2vzyMe" target="_blank">capítulo 3</a>:  
-<a href="https://eloquentjavascript.net/" target="_blank">**Eloquent JavaScript**</a>  
+#### Opcional
 
+Para reforzar lo visto en clase se recomienda leer el [capítulo 3](https://eloquentjavascript.net/03_functions.html) del siguiente libro interactivo:
+
+**[Eloquent JavaScript](https://eloquentjavascript.net/)**
+
+En este capítulo se abordan las funciones, cómo declararlas, expresiones de funciones y funciones recursivas. Al final del capítulo encontrarás 3 ejercicios que pueden ser resueltos en la misma página.

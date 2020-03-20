@@ -29,6 +29,10 @@ Dividir el trabajo que realiza un programa mediante tareas más pequeñas aislad
 
 	- [Reto 3: Fibonacci](./Reto-03)
 
+- **[Reto final](./Reto-final)**
+
+- **[Postwork](./Postwork)**
+
 ---
 
 ## ¿Qué es una función?
