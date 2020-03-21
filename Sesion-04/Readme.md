@@ -27,6 +27,10 @@ Mostrar las principales características de los objetos y arreglos, así como la
 
 	- [Reto 3: Extraer una lista de propiedades](./Reto-03)
 
+- **[Reto final](./Reto-final)**
+
+- **[Postwork](./Postwork)**
+
 ---
 
 ## Arreglos
@@ -218,27 +222,27 @@ propiedad llamada `age.`
 ```javascript
 console.log( john );
 /*
-*	Valor actual
-*	{
-*		firstName: "John",
-*		lastName: "Doe",
-*		birthYear: 1990,
-*		calculateAge: ƒ
-*	}
+Valor actual
+{
+  firstName: "John",
+  lastName: "Doe",
+  birthYear: 1990,
+  calculateAge: ƒ
+}
 */
 
 john.calculateAge();
 
 console.log( john );
 /*
-*	Después de llamar el método calculateAge()
-*	{
-*		firstName: "John",
-*		lastName: "Doe",
-*		birthYear: 1990,
-*		age: 30,
-*		calculateAge: ƒ
-*	}
+Después de llamar el método calculateAge()
+{
+  firstName: "John",
+  lastName: "Doe",
+  birthYear: 1990,
+  age: 30,
+  calculateAge: ƒ
+}
 */
 ```
 
