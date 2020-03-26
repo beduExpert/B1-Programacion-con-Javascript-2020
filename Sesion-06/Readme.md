@@ -15,15 +15,9 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 - **[Inmutabilidad](#inmutabilidad)**
 
-	- [Ejemplo 1: Function constructor](./Ejemplo-01)
+	- [Ejemplo 1: Mutando objetos](./Ejemplo-01)
 
-- **[Herencia](#herencia)**
-
-	- [Ejemplo 2: Heredando propiedades](./Ejemplo-02)
-
-- **[Prototype](#prototype)**
-
-	- [Ejemplo 3: Heredando métodos](./Ejemplo-03)
+- **[Funciones puras](#funciones-puras)**
 
 ---
 
@@ -73,24 +67,30 @@ Para llevar este concepto a la práctica es importante siempre preferir crear un
 
 ---
 
-## Herencia
+## Funciones puras
 
-En términos simples la herencia es cuando un objeto está basado en otro objeto, es decir, un objeto puede acceder a las propiedades y métodos de otro objeto.
+Para que una función pueda ser considerada pura debe cumplir dos reglas:
 
-![Inheritance](./assets/inheritance.png)
+1. El valor retornado siempre es el mismo cuando se da el mismo valor de entrada.
 
-El constructor `Developer` tiene propiedades y métodos únicos cómo skills que domina, años de experiencia y el skill de su preferencia. Como `Developer` también es una persona, es decir, tambíen tiene nombre, edad y un empleo, el constructor `Developer` puede heredar del constructor `Person`, teniendo acceso a las mismas propiedades y métodos.
+2. No debe producir side effects (efectos secundarios).
 
-#### [Ejemplo 2: Heredando propiedades](./Ejemplo-02)
+![Pure Function](./assets/pure-function.png)
 
----
+El primer punto se refiere a que si ejecutamos la misma función varias veces con los mismos argumentos siempre obtendremos el mismo resultado.
 
-## Prototype
+```javascript
+function add(a, b) {
+	return a + b;
+}
+```
 
-En JavaScript la herencia es posible gracias a una propiedad con la que cuentan todos los objetos llamada `Prototype`. Si queremos que las instancias hereden un método lo podemos colocar en el `Prototype` del constructor. Veamos un ejemplo con el constructo `Person` y la instancia `john` con la que hemos trabajado anteriormente.
+Podemos llamar las veces que queramos la esta función de la forma `add(1, 2)` y sabemos que siempre vamos a obtener el mismo resultado `3`.
 
-![Prototype Chain](./assets/prototype-chain.png)
+```javascript
+function randomNumber() {
+	return Math.floor(Math.random() * 10);
+}
+```
 
-Como `john` es una instancia de `Person`, este tiene acceso al método `calculateAge()` aunque no se encuentre dentro del prototype de `john`. Cuando llamamos a un método, JavaScript busca primero en el prototype del objeto, si no lo encuentra busca en el prototype del constructor con el que fue instanciado, y así sucesivamente hasta llegar al constructor `Object`, del cuál se instancian todos los objetos en JavaScript y [contiene varios métodos](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object). A esto se le conoce como **prototype chain**.
-
-#### [Ejemplo 3: Heredando métodos](./Ejemplo-03)
+Esta función no cumple la primera regla porque si la llamamos 10 veces, obtendremos cada vez un número aleatorio entre 1 y 10. No podemos predecir el valor de retorno de esta función.
