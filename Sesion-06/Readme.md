@@ -19,6 +19,10 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 - **[Funciones puras](#funciones-puras)**
 
+- **[Funciones de primera clase](#funciones-de-primera-clase)**
+
+- **[Funciones de alto orden](#funciones-de-alto-orden)**
+
 ---
 
 ## Progamación funcional
@@ -94,3 +98,77 @@ function randomNumber() {
 ```
 
 Esta función no cumple la primera regla porque si la llamamos 10 veces, obtendremos cada vez un número aleatorio entre 1 y 10. No podemos predecir el valor de retorno de esta función.
+
+Los side effects son un término más amplio que el anterior. A grandes rasgos significa modificar algo fuera de la función. Algunos ejemplos:
+
+1. Mutar los parámetros que recibe una función como en el [Ejemplo 1](./Ejemplo-01).
+
+2. Modificar cualquier variable fuera de la función.
+
+3. Llamadas a una API.
+
+4. `console.log()`
+
+La función anterior `add()` también cumple con la segunda regla, no produce side effects. Sólamente está trabajando con las variables que recibe la función y siempre retorna un valor.
+
+---
+
+## Funciones de primera clase
+
+En un lenguaje de programación se dice que una función es de primera clase cuando puede ser tratada como cualquier otra variable. Por ejemplo, cuando puede ser pasada como argumento a otras funciones o cuando puede ser asignada a una variable. Este comportamiento no es explusivo de JavaScript, otros lenguajes de programación como R o Scala también cuentan con esta característica.
+
+Ya hemos guardado funciones anónimas en una variable anteriormente.
+
+```javascript
+var square = function(number) {
+	return number * number;
+}
+
+var squareOfFour = square(4);
+
+console.log(squareOfFour); // 16
+```
+
+Por lo tanto, las expresiones de funciones como estas son consideradas funciones de primera clase.
+
+---
+
+## Funciones de alto orden
+
+Cuando una función recibe otra función como parámetro se le llama de alto orden o de orden superior. JavaScript nos proporciona varias funciones de alto orden para trabajar con estructuras de datos. Las más usadas son `map()`, `filter()` y `reduce()`.
+
+Al principio de la sesión vimos cómo funciona `map()`, aplica una función sobre cada elemento del arreglo. Es importante destacar que no muta el arreglo original.
+
+```javascript
+var numbers = [1, 2, 3, 4, 5];
+var doubles = numbers.map(function(number) {
+	return number * 2;
+});
+
+console.log(numbers); // [1, 2, 3, 4, 5]
+console.log(doubles); // [2, 4, 6, 8, 10]
+```
+
+De igual forma `filter()` crea un nuevo arreglo pero sólo con aquellos elementos que retornen true por la función que actúa como predicado.
+
+```JavaScript
+var numbers = [1, 2, 3, 4, 5];
+
+var evenNumbers = numbers.filter(function(number) {
+	return number % 2 === 0;
+});
+
+console.log(evenNumbers); // [2, 4]
+```
+
+Por último, `reduce()` acumula o reduce todos los elementos a un valor único según la función dada.
+
+```JavaScript
+var numbers = [1, 2, 3, 4, 5];
+
+var sum = numbers.reduce(function(accumulator, currentValue) {
+	return accumulator + currentValue;
+});
+
+console.log(sum); // 15
+```
