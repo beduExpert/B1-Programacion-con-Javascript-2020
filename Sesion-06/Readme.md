@@ -19,6 +19,8 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 - **[Funciones puras](#funciones-puras)**
 
+	- [Ejemplo 2: Creando funciones puras](./Ejemplo-02)
+
 - **[Funciones de primera clase](#funciones-de-primera-clase)**
 
 - **[Funciones de alto orden](#funciones-de-alto-orden)**
@@ -110,6 +112,8 @@ Los side effects son un término más amplio que el anterior. A grandes rasgos s
 4. `console.log()`
 
 La función anterior `add()` también cumple con la segunda regla, no produce side effects. Sólamente está trabajando con las variables que recibe la función y siempre retorna un valor.
+
+#### [Ejemplo 2: Creando funciones puras](./Ejemplo-02)
 
 ---
 
