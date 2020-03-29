@@ -25,6 +25,8 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 - **[Funciones de alto orden](#funciones-de-alto-orden)**
 
+	- [Ejemplo 3: Sumando Dígitos](./Ejemplo-03)
+
 ---
 
 ## Progamación funcional
@@ -176,3 +178,5 @@ var sum = numbers.reduce(function(accumulator, currentValue) {
 
 console.log(sum); // 15
 ```
+
+#### [Ejemplo 3: Sumando Dígitos](./Ejemplo-03)
