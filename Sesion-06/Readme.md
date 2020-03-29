@@ -172,7 +172,7 @@ var numbers = [1, 2, 3, 4, 5];
 
 var sum = numbers.reduce(function(accumulator, currentValue) {
 	return accumulator + currentValue;
-});
+}, 0); // Initial value
 
 console.log(sum); // 15
 ```
