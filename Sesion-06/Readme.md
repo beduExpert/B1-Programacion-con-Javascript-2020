@@ -45,7 +45,7 @@ console.log(numbers); // [1, 2, 3, 4, 5]
 console.log(doubles); // [2, 4, 6, 8, 10]
 ```
 
-Este es un ejemplo de código imperativo. Generalmente usar ciclos es programación imperativa pues queda del lado del programador controlar cuando iniciar, cuándo terminar y qué hacer en cada ciclo.
+Este es un ejemplo de código imperativo. Generalmente usar ciclos es programación imperativa pues queda del lado del programador controlar cuándo iniciar, cuándo terminar y qué hacer en cada ciclo.
 
 ```javascript
 var numbers = [1, 2, 3, 4, 5];
