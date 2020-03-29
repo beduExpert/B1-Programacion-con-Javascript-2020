@@ -27,6 +27,12 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 	- [Ejemplo 3: Sumando Dígitos](./Ejemplo-03)
 
+	- [Reto 1: Flatten](./Reto-01)
+
+	- [Reto 2: Compact](./Reto-02)
+
+	- [Reto 3: Loop](./Reto-03)
+
 ---
 
 ## Programación funcional
@@ -180,3 +186,9 @@ console.log(sum); // 15
 ```
 
 #### [Ejemplo 3: Sumando Dígitos](./Ejemplo-03)
+
+#### [Reto 1: Flatten](./Reto-01)
+
+#### [Reto 2: Compact](./Reto-02)
+
+#### [Reto 3: Loop](./Reto-03)

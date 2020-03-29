@@ -1,27 +1,41 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 1: Flatten
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar funciones de alto orden para manipular arreglos.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+`N/A`
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
+
+Crear una función `flatten` que recibe un arreglo de arreglos y retorna un nuevo arreglo con todos los elementos del arreglo original.
+
+```javascript
+function flatten(arrays) {
+  ...
+}
+
+var arrays = [[1, 2, 3], [4, 5], [6]];
+var array = flatten(arrays);
+
+console.log(array); // [1, 2, 3, 4, 5, 6]
+```
 
 <details>
+  <summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+function flatten(arrays) {
+  return arrays.reduce(function(flat, current) {
+    return flat.concat(current);
+  }, []);
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+</details>

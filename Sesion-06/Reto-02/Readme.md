@@ -1,27 +1,41 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 02`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 2: Compact
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar funciones de alto orden para manipular arreglos.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Haber terminado el [Reto 1](../Reto-01/Readme.md).
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
+
+Crear una función `compact` que recibe un arreglo y retorna un nuevo arreglo sin incluir los valores que sean falsy.
+
+```javascript
+function compact(array) {
+  ...
+}
+
+var array = [0, 1, false, 2, '', 3];
+var compactedArray = compact(array);
+
+console.log(compactedArray); // [1, 2, 3]
+```
 
 <details>
+  <summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+function compact(array) {
+  return array.filter(function(element) {
+    return !!element;
+  });
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+</details>

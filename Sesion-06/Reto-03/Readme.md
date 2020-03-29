@@ -1,27 +1,49 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 03`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 3: Loop
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Implementar funciones de alto orden para manipular arreglos.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Haber terminado el [Reto 2](../Reto-02/Readme.md).
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
+
+Crear una función de alto orden `loop` que será similar a un `for`. Recibe `value`, una función `test`, una función `update` y una función `body`. En cada iteración se debe ejecutar la función `test` y terminar el ciclo si la función retorna `false`. Después se ejecuta la función `body` dándole como argumento el `value` actual. Por último se ejecuta la función `update` para crear un nuevo valor y se repite el proceso.
+
+```javascript
+function loop(start, test, update, body) {
+  ...
+}
+
+var test = function(n) {
+  return n > 0;
+}
+
+var update = function(n) {
+  return n - 1;
+}
+
+loop(3, test, update, console.log);
+// 3
+// 2
+// 1
+```
 
 <details>
+  <summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+function loop(start, test, update, body) {
+  for (var value = start; test(value); value = update(value)) {
+    body(value);
+  }
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+</details>
