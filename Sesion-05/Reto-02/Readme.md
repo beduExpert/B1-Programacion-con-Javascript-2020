@@ -1,27 +1,69 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 02`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 2: Group
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Crear un constructor, agregar métodos al prototype e instanciar múltiples objetos a partir de dicho constructor.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Haber terminado el [Reto 1](../Reto-01/Readme.md).
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
+
+Crear un function constructor `Group` el cual crea una lista (arreglo) vacía.
+
+Agregar los siguientes métodos a `Group`:
+
+1. `add`: Agrega un nuevo valor al grupo sólo si no existe.
+
+2. `has`: Retorna un booleano indicando si el valor es un miembro del grupo.
+
+3. `from`: Método estático que recibe un arreglo y crea un grupo con todos los elementos de dicho arreglo.
+
+```javascript
+var Group = function() {
+  ...
+}
+
+var group = Group.from([1, 2, 3, 4, 5]);
+console.log(group); // Group { members: [ 1, 2, 3, 4, 5 ] }
+console.log(group.has(5)); // true
+console.log(group.has(10)); // false
+
+group.add(10);
+console.log(group.has(10)); // true
+```
 
 <details>
+  <summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+var Group = function() {
+  this.members = [];
+}
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Group.prototype.add = function(value) {
+  if (!this.has(value)) {
+    this.members.push(value);
+  }
+}
 
+Group.prototype.has = function(value) {
+  return this.members.includes(value);
+}
+
+Group.from = function(collection) {
+  var group = new Group();
+
+  for(var i = 0; i < collection.length; i++) {
+    group.add(collection[i]);
+  }
+  return group;
+}
+```
+
+</details>

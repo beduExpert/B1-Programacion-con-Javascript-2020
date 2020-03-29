@@ -1,27 +1,47 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 03`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 3: Perímetro
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Crear un constructor, agregar métodos al prototype e instanciar múltiples objetos a partir de dicho constructor.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Haber terminado el [Reto 2](../Reto-02/Readme.md).
 
-Agrega las instrucciones generales del ejemplo o reto
+#### Desarrollo
+
+Crear un function constructor `Triangle` con tres parámetros `a`, `b` y `c`. Cada uno representa una lado del triángulo.
+
+Agregar el método `getPerimeter` al `prototype` de `Triangle`, el cual retorna el perímetro del tríangulo.
+
+```javascript
+var Triangle = function(a, b, c) {
+  ...
+}
+
+var triangle = new Triangle(1, 2, 3);
+
+console.log(triangle); // Triangle { a: 1, b: 2, c: 3 }
+console.log(triangle.getPerimeter()); // 6
+```
 
 <details>
+  <summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+var Triangle = function(a, b, c) {
+  this.a = a;
+  this.b = b;
+  this.c = c;
+}
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Triangle.prototype.getPerimeter = function() {
+  return this.a + this.b + this.c;
+}
+```
 
+</details>

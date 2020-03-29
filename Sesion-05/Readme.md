@@ -17,13 +17,19 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 	- [Ejemplo 1: Function constructor](./Ejemplo-01)
 
+	- [Reto 1: Vectores](./Reto-01)
+
 - **[Herencia](#herencia)**
 
 	- [Ejemplo 2: Heredando propiedades](./Ejemplo-02)
 
+	- [Reto 2: Group](./Reto-02)
+
 - **[Prototype](#prototype)**
 
 	- [Ejemplo 3: Heredando métodos](./Ejemplo-03)
+
+	- [Reto 3: Perímetro](./Reto-03)
 
 ---
 
@@ -118,6 +124,8 @@ De esta forma podemos crear los objetos que queramos a partir de la plantilla. E
 
 #### [Ejemplo 1: Function constructor](./Ejemplo-01)
 
+#### [Reto 1: Vectores](./Reto-01)
+
 ---
 
 ## Herencia
@@ -130,6 +138,8 @@ El constructor `Developer` tiene propiedades y métodos únicos cómo skills que
 
 #### [Ejemplo 2: Heredando propiedades](./Ejemplo-02)
 
+#### [Reto 2: Group](./Reto-02)
+
 ---
 
 ## Prototype
@@ -141,3 +151,5 @@ En JavaScript la herencia es posible gracias a una propiedad con la que cuentan 
 Como `john` es una instancia de `Person`, este tiene acceso al método `calculateAge()` aunque no se encuentre dentro del prototype de `john`. Cuando llamamos a un método, JavaScript busca primero en el prototype del objeto, si no lo encuentra busca en el prototype del constructor con el que fue instanciado, y así sucesivamente hasta llegar al constructor `Object`, del cuál se instancian todos los objetos en JavaScript y [contiene varios métodos](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object). A esto se le conoce como **prototype chain**.
 
 #### [Ejemplo 3: Heredando métodos](./Ejemplo-03)
+
+#### [Reto 3: Perímetro](./Reto-03)
