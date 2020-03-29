@@ -52,7 +52,7 @@ paradigmas es una variante de una de estas dos.
     <th colspan="2">Programación declarativa</th>
   </tr>
   <tr>
-    <td colspan="2">Se describe el problema que se pretende solucionar. Está más enfocado en el <i>qué</i> solución se deasea alcanzar.</td>
+    <td colspan="2">Se describe el problema que se pretende solucionar. Está más enfocado en el <i>qué</i> solución se desea alcanzar.</td>
   </tr>
   <tr>
     <th>Programación funcional</th>

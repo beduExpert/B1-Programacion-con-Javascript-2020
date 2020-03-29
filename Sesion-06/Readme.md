@@ -29,7 +29,7 @@ Crear constructores a partir de los cuales se puedan instanciar múltiples objet
 
 ---
 
-## Progamación funcional
+## Programación funcional
 
 Como vimos en la sesión anterior existen distintos paradigmas de programación. La programación funcional es un paradigma declarativo, es decir, se enfoca en el _qué_ se desea lograr sin preocuparse mucho en el _cómo_ (el lenguaje de programación se encarga de esta parte).
 
