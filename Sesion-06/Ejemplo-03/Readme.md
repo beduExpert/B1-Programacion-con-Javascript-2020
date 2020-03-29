@@ -85,7 +85,7 @@ var sum = arrayOfNumbers.reduce(function(a, b) {
   return a + b;
 }, 0);
 
-console.log(arrayOfNumbers); // [1, 2, 3, 4, 5]
+console.log(sum); // 15
 ```
 
 Todas estas funciones pueden ser encadenadas de la misma forma que hicimos con las primeras dos. El producto final dentro de una función sería:
