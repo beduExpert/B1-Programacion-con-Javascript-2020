@@ -1,27 +1,52 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Postwork`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Postwork
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Integrar function constructors e instanciamiento de objetos en el proyecto.
 
-#### REQUISITOS
+#### Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+Una ventaja más de crear un function constructor para `Task` es que nos permite agregar funciones en el prototype para que sean heredadas a todas las instancias. Un caso muy práctico sería para funciones que deban modificar propiedades del mismo objeto.
 
-#### DESARROLLO
+```javascript
+function toggleTaskCompleted(index) {
+	tasks[index].isCompleted = !tasks[index].isCompleted;
+}
+```
 
-Agrega las instrucciones generales del ejemplo o reto
+La sesión anterior creamos la función `toggleTaskCompleted` para modificar la propiedad `isCompleted` de cualquier tarea en base a su posición en el arreglo. Podemos poner esta función en el prototype de `Task` de la siguiente manera:
 
-<details>
+```javascript
+var Task = function(description, isCompleted) {
+  this.description = description;
+  this.isCompleted = isCompleted;
+}
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Task.prototype.toggleCompleted = function() {
+  this.isCompleted = !this.isCompleted;
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Ahora todos los objetos creados a partir de `Task` tendrán acceso a esta función.
 
+```javascript
+var tasks = [];
 
+function addTask(description, isCompleted = false) {
+  tasks.push(new Task(description, isCompleted));
+}
+
+addTask('Some task to do');
+
+console.log(tasks[0]);  // { description: 'Some...', isCompleted: false }
+
+tasks[0].toggleCompleted();
+
+console.log(tasks[0]);  // { description: 'Some...', isCompleted: true }
+```
+
+![Tasks](./assets/tasks.png)
