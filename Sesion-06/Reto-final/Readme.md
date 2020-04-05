@@ -47,7 +47,7 @@ En el [ejemplo 2](../Ejemplo-02/Readme.md) vimos cómo usar `map()` para crear u
 
 ```javascript
 function addTask(tasks, description, isCompleted = false) {
-  const newTasks = [].concat(tasks);
+  var newTasks = [].concat(tasks);
 
   ...
 }
@@ -57,7 +57,7 @@ Por último debemos agregar la nueva tarea a `newTasks`. En este caso no usaremo
 
 ```javascript
 function addTask(tasks, description, isCompleted = false) {
-  const newTasks = [].concat(tasks);
+  var newTasks = [].concat(tasks);
 
   newTasks.push({
     description: description,
@@ -74,7 +74,7 @@ Para usar esta función debemos siempre pasar `tasks` y reemplazarlo con el nuev
 var tasks = [];
 
 function addTask(tasks, description, isCompleted = false) {
-  const newTasks = [].concat(tasks);
+  var newTasks = [].concat(tasks);
 
   newTasks.push({
     description: description,
