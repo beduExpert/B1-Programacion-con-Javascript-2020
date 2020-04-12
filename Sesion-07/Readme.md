@@ -105,7 +105,7 @@ Para seleccionar un sólo nodo en específico podemos darle un atributo `id` y u
   <p>Hello World!</p>
   <p>Here is a
     <a href="#">link</a>
-	</p>
+  </p>
 
   <script>
     var title = document.getElementById('title');
@@ -122,7 +122,7 @@ Otra forma de seleccionar elementos es con el método `getElementsByClassName`, 
   <p class="subtitle">Hello World!</p>
   <p>Here is a
     <a href="#">link</a>
-	</p>
+  </p>
 
   <script>
     var subtitle = document.body.getElementsByClassName('subtitle')[0];
