@@ -101,16 +101,16 @@ Para seleccionar un sólo nodo en específico podemos darle un atributo `id` y u
 
 ```html
 <body>
-	<h1 id="title">Document Object Model</h1>
-	<p>Hello World!</p>
-	<p>Here is a
-		<a href="#">link</a>
+  <h1 id="title">Document Object Model</h1>
+  <p>Hello World!</p>
+  <p>Here is a
+    <a href="#">link</a>
 	</p>
 
-	<script>
-		var title = document.getElementById('title');
-		console.log(title); // <h1 id="title">Document Object Model</h1>
-	</script>
+  <script>
+    var title = document.getElementById('title');
+    console.log(title); // <h1 id="title">Document Object Model</h1>
+  </script>
 </body>
 ```
 
@@ -118,15 +118,15 @@ Otra forma de seleccionar elementos es con el método `getElementsByClassName`, 
 
 ```html
 <body>
-	<h1>Document Object Model</h1>
-	<p class="subtitle">Hello World!</p>
-	<p>Here is a
-		<a href="#">link</a>
+  <h1>Document Object Model</h1>
+  <p class="subtitle">Hello World!</p>
+  <p>Here is a
+    <a href="#">link</a>
 	</p>
 
-	<script>
-		var subtitle = document.body.getElementsByClassName('subtitle')[0];
-		console.log(subtitle); // <p class="subtitle">Hello World!</p>
-	</script>
+  <script>
+    var subtitle = document.body.getElementsByClassName('subtitle')[0];
+    console.log(subtitle); // <p class="subtitle">Hello World!</p>
+  </script>
 </body>
 ```
