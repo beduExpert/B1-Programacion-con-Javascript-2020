@@ -17,6 +17,8 @@ Identificar el rol de JavaScript en el desarrollo web al permitir interactividad
 
 - **[Estructura de datos de árbol](#estructura-de-datos-de-árbol)**
 
+- **[Seleccionar elementos](#seleccionar-elementos)**
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -76,3 +78,55 @@ Los nodos del DOM contienen vínculos entre ellos como los que se muestran en el
 ![Node links](./assets/links.png)
 
 Todos los nodos tienen una propiedad `parentNode` que apunta al nodo que lo contiene. La propiedad `childNodes` apunta a un objeto parecido a un arreglo que contiene los hijos del nodo. Las propiedades `firstChild` y `lastChild` apuntan al primer y último nodo hijo respectivamente o `null` si no tienen. De igual forma, `previousSibling` y `nextSibling` apuntan a los nodos hermanos, es decir, los nodos adyacentes que comparten el mismo padre.
+
+---
+
+## Seleccionar elementos
+
+Si bien navegar entre nodos padres, hijos y hermanos con las propiedades vistas anteriormente es útil, no es lo más óptimo si queremos encontrar un nodo en particular y partimos desde `document.body`. La estructura del DOM podría cambiar en cualquier momento, además los nodos de texto son creados incluso para espacios en blanco entre nodos. En nuestro ejemplo, el nodo `body` no tiene sólo tres hijos (`<h1>` y dos `<p>`), en realidad tiene siete: los tres que ya vimos más los espacios en blanco antes, después y entre nodos.
+
+Si queremos obtener el link `<a>` de nuestro ejemplo, empezar a recorrer los nodos desde `body` sería como decir que queremos _obtener el segundo hijo del sexto hijo de `body`_. Sería mucho más sencillo decir que queremos _obtener el primer link del documento_.
+
+```javascript
+var link = document.body.getElementsByTagName('a')[0];
+
+console.log(link);  //  <a href="#">link</a>
+```
+
+El método `getElementsByTagName` regresa un objeto similar a un arreglo con todos los elementos descendientes que contengan la etiqueta proporcionada como argumento.
+
+> Elementos descendientes se refiere a todos los nodos hijos directos e indirectos.
+
+Para seleccionar un sólo nodo en específico podemos darle un atributo `id` y usar el método `document.getElementById`.
+
+```html
+<body>
+	<h1 id="title">Document Object Model</h1>
+	<p>Hello World!</p>
+	<p>Here is a
+		<a href="#">link</a>
+	</p>
+
+	<script>
+		var title = document.getElementById('title');
+		console.log(title); // <h1 id="title">Document Object Model</h1>
+	</script>
+</body>
+```
+
+Otra forma de seleccionar elementos es con el método `getElementsByClassName`, muy parecido a `getElementsByTagName`, busca en los descendientes de un nodo todos los elementos que contengan el string proporcionado en el atributo `class`.
+
+```html
+<body>
+	<h1>Document Object Model</h1>
+	<p class="subtitle">Hello World!</p>
+	<p>Here is a
+		<a href="#">link</a>
+	</p>
+
+	<script>
+		var subtitle = document.body.getElementsByClassName('subtitle')[0];
+		console.log(subtitle); // <p class="subtitle">Hello World!</p>
+	</script>
+</body>
+```
