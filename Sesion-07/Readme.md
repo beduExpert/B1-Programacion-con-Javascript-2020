@@ -19,6 +19,10 @@ Identificar el rol de JavaScript en el desarrollo web al permitir interactividad
 
 - **[Seleccionar elementos](#seleccionar-elementos)**
 
+- **[Modificar el documento](#modificar-el-documento)**
+
+	- [Ejemplo 2: Cambiando el DOM](./Ejemplo-02)
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -130,3 +134,17 @@ Otra forma de seleccionar elementos es con el método `getElementsByClassName`, 
   </script>
 </body>
 ```
+
+---
+
+## Modificar el documento
+
+Casi todo en el DOM puede ser modificado. La estructura del árbol puede ser alterada al cambiar las relaciones padre-hijo. Todos los nodos contienen el método `remove` que los elimina del padre actual. También se pueden agregar hijos a un nodo usando el método `appendChild`, el cual agrega un elemento al final de la lista de hijos de un nodo. Otro método es `insertBefore` el cual inserta un nodo antes de otro.
+
+El método `replaceChild` se puede usar para reemplazar un nodo hijo por otro. Es importante tomar en cuenta que tanto `replaceChild` como `insertBefore` reciben dos argumentos, el primero siempre es el nuevo nodo.
+
+#### [Ejemplo 2: Cambiando el DOM](./Ejemplo-02)
+
+---
+
+## Crear nodos
