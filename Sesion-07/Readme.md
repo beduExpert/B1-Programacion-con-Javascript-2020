@@ -23,6 +23,12 @@ Identificar el rol de JavaScript en el desarrollo web al permitir interactividad
 
 	- [Ejemplo 2: Cambiando el DOM](./Ejemplo-02)
 
+- **[Crear nodos](#crear-nodos)**
+
+	- [Ejemplo 3: Crear nuevos nodos](./Ejemplo-03)
+
+- **[Atributos](#atributos)**
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -148,3 +154,59 @@ El método `replaceChild` se puede usar para reemplazar un nodo hijo por otro. E
 ---
 
 ## Crear nodos
+
+Parte importante de manipular el DOM es poder crear nuevos nodos para ser insertados posteriormente en el documento con métodos como los vistos anteriormente. JavaScript nos proporciona el método `document.createElement` el cual crea un nuevo nodo vacío del tipo que sea especificado en el argumento de la función.
+
+```javascript
+var h1 = document.createElement('h1');
+
+console.log(h1);  // <h1></h1>
+```
+
+Para agregar un texto a este nuevo nodo `h1` primero debemos crear un nuevo nodo de texto, para esto usamos el método `document.createTextNode`, posteriormente lo podemos agregar como hijo de `h1` con el método `appendChild`.
+
+```javascript
+var text = document.createTextNode('Hello World');
+
+console.log(text);  // 'Hello World'
+
+h1.appendChild(text);
+
+console.log(h1);  // <h1>Hello World</h1>
+```
+
+#### [Ejemplo 3: Crear nuevos nodos](./Ejemplo-03)
+
+---
+
+## Atributos
+
+Hasta ahora hemos creado elementos del DOM que representan etiquetas HTML. Algunas de estas etiquetas requieren de atributos, por ejemplo el atributo `href` para los hipervínculos. Los objetos del DOM cuentan con propiedades del mismo nombre del atributo que nos permiten leer o modificar su valor.
+
+```html
+<a id="link">Some cool link</a>
+
+<script>
+  var link = document.getElementById('link');
+
+	link.href = "http://google.com"
+
+	console.log(link); // <a id="link" href="http://google.com">Some cool link</a>
+</script>
+```
+
+Un atributo muy utilizado es `class` para darle estilos a una etiqueta. Esta es una palabra reservada en JavaScript, por lo que debemos usar `className` en su lugar.
+
+```html
+<a id="link">Some cool link</a>
+
+<script>
+  var link = document.getElementById('link');
+
+	link.href = "http://google.com"
+
+	link.className = "styled-link"
+
+	console.log(link); // <a id="link" href="http://google.com" class="styled-link">Some cool link</a>
+</script>
+```
