@@ -1,27 +1,53 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 07`](../Readme.md) > `Reto 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 1: Reemplazar imágenes
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Manipular el DOM creando nuevos nodos y reemplazándolos con existentes.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Partir del siguiente documento HTML:
 
-Agrega las instrucciones generales del ejemplo o reto
+```html
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Reto 1: Reemplazar Imágenes</title>
+  </head>
+  <body>
+    <h1>Images</h1>
+
+    <img src="https://picsum.photos/200/300" alt="First Image"/>
+    <img src="https://picsum.photos/200/300" alt="Second Image"/>
+    <img src="https://picsum.photos/200/300" alt="Third Image"/>
+
+    <script>
+      // Code goes here
+    </script>
+  </body>
+</html>
+```
+
+#### Desarrollo
+
+Reemplazar todas las imágenes del documento (etiquetas `<img/>`) con el texto que contienen en el atributo `alt`.
 
 <details>
+  <summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+var images = document.body.getElementsByTagName("img");
+for (var i = images.length - 1; i >= 0; i--) {
+  var image = images[i];
+  if (image.alt) {
+    var text = document.createTextNode(image.alt);
+    image.parentNode.replaceChild(text, image);
+  }
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+</details>

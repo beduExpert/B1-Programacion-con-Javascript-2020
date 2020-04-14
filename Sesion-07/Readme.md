@@ -29,6 +29,10 @@ Identificar el rol de JavaScript en el desarrollo web al permitir interactividad
 
 - **[Atributos](#atributos)**
 
+	- [Reto 1: Reemplazar imágenes](./Reto-01)
+
+	- [Reto 2: Crear una tabla](./Reto-02)
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -210,3 +214,7 @@ Un atributo muy utilizado es `class` para darle estilos a una etiqueta. Esta es 
   console.log(link); // <a id="link" href="http://google.com" class="styled-link">Some cool link</a>
 </script>
 ```
+
+#### [Reto 1: Reemplazar imágenes](./Reto-01)
+
+#### [Reto 2: Crear una tabla](./Reto-02)
