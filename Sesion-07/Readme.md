@@ -189,9 +189,9 @@ Hasta ahora hemos creado elementos del DOM que representan etiquetas HTML. Algun
 <script>
   var link = document.getElementById('link');
 
-	link.href = "http://google.com"
+  link.href = "http://google.com"
 
-	console.log(link); // <a id="link" href="http://google.com">Some cool link</a>
+  console.log(link); // <a id="link" href="http://google.com">Some cool link</a>
 </script>
 ```
 
@@ -203,10 +203,10 @@ Un atributo muy utilizado es `class` para darle estilos a una etiqueta. Esta es 
 <script>
   var link = document.getElementById('link');
 
-	link.href = "http://google.com"
+  link.href = "http://google.com"
 
-	link.className = "styled-link"
+  link.className = "styled-link"
 
-	console.log(link); // <a id="link" href="http://google.com" class="styled-link">Some cool link</a>
+  console.log(link); // <a id="link" href="http://google.com" class="styled-link">Some cool link</a>
 </script>
 ```
