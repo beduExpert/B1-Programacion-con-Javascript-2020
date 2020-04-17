@@ -1,27 +1,73 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 07`](../Readme.md) > `Postwork`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Postwork
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Crear nodos para dar estructura al proyecto en base a los mockups realizados anteriormente.
 
-#### REQUISITOS
+#### Desarrollo
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+Ya hemos visto cómo cambiar la estructura de un documento manipulando el DOM al crear elementos y modificarlos. Además, en el [Reto Final](../Reto-final) creamos dos funciones auxiliares que facilitan la creación de nodos.
 
-#### DESARROLLO
+Ahora puedes comenzar a integrar todo lo visto en tu proyecto. En la [sesión 3](../../Sesion-03/Reto-final) vimos una estructura sugerida para iniciar el proyecto, en el HTML puedes tener un sólo `<div>` e ir construyendo los demás elementos desde JavaScript.
 
-Agrega las instrucciones generales del ejemplo o reto
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
 
-<details>
+    <div id="app"></div>
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+  </body>
+</html>
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Este elemento `<div>` lo usaremos como un contenedor para el resto de la aplicación.
 
+```javascript
+var container = document.getElementById('app');
+```
 
+Todos los demás elementos que creemos los agregaremos como hijos de `container`.
+
+```javascript
+var title = createNode('h1', 'Todo App');
+
+var addButton = createNode('button', 'Add', { type: 'button' });
+
+var input = createNode('input', '', { type: 'text', placeholder: 'New task...' });
+```
+
+Sin usar la función `createNode` que hicimos anteriormente tendríamos que crear los nodos de texto por separado y agregar los atributos mediante las propiedades `.type` y `.placeholder` respectivamente. El segundo argumento para el input es un string vacío ya que la etiqueta `<input>` se cierra sola y no tiene nodos hijos.
+
+En lugar de usar `.appendChild()` podemos agregar estos tres elementos con la función auxiliar `appendChildren()`.
+
+```javascript
+appendChildren(container, [title, input, addButton]);
+```
+
+![App](./assets/app.png)
+
+Como podrás ver, puedes realizar toda la estructura del mockup de tu proyecto sólo con JavaScript. Al final tendrás que agregar estilos, recuerda que `class` es una palabra reservada en JavaScript por lo que debes usar la propiedad `className`.
+
+```javascript
+var container = document.getElementById('app');
+container.className = 'container';
+
+var title = createNode('h1', 'Todo App', { className: 'title' });
+
+var addButton = createNode('button', 'Add', { type: 'button', className: 'add-button' });
+
+var input = createNode('input', '', { type: 'text', placeholder: 'New task...', className: 'todo-input' });
+```
+
+![App Final](./assets/app-final.png)
