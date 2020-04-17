@@ -10,7 +10,7 @@ Crear nodos para dar estructura al proyecto en base a los mockups realizados ant
 
 #### Desarrollo
 
-Ya hemos visto cómo cambiar la estructura de un documento manipulando el DOM al crear elementos y modificarlos. Además, en el [Reto Final](../Reto-final) creamos dos funciones auxiliares que facilitan la creación de nodos.
+Ya hemos visto cómo cambiar la estructura de un documento manipulando el DOM al crear elementos y modificarlos. Además, en el [Reto Final](../Reto-final) realizamos dos funciones auxiliares que facilitan la creación de nodos.
 
 Ahora puedes comenzar a integrar todo lo visto en tu proyecto. En la [sesión 3](../../Sesion-03/Reto-final) vimos una estructura sugerida para iniciar el proyecto, en el HTML puedes tener un sólo `<div>` e ir construyendo los demás elementos desde JavaScript.
 
@@ -49,7 +49,7 @@ var input = createNode('input', '', { type: 'text', placeholder: 'New task...' }
 
 Sin usar la función `createNode` que hicimos anteriormente tendríamos que crear los nodos de texto por separado y agregar los atributos mediante las propiedades `.type` y `.placeholder` respectivamente. El segundo argumento para el input es un string vacío ya que la etiqueta `<input>` se cierra sola y no tiene nodos hijos.
 
-En lugar de usar `.appendChild()` podemos agregar estos tres elementos con la función auxiliar `appendChildren()`.
+En lugar de usar `.appendChild()` tres veces podemos agregar estos elementos con la función auxiliar `appendChildren()`.
 
 ```javascript
 appendChildren(container, [title, input, addButton]);
