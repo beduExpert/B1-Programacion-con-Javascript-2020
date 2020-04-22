@@ -15,6 +15,8 @@ Generar scripts que permitan la manipulación e interacción con la web.
 
 - **[Eventos y nodos del DOM](#eventos-y-nodos-del-dom)**
 
+	- [Ejemplo 1: Eventos en nodos del DOM](./Ejemplo-01)
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -81,3 +83,9 @@ También podemos eliminar handlers que hayamos creado con anterioridad usando el
 ```
 
 La fución que le pasemos a `removeEventListener` debe ser la misma que se le dió a `addEventListener`. En este caso se debe definir una función y darle un nombre, de esta forma podemos pasar la funicón a ambos métodos.
+
+#### [Ejemplo 1: Eventos en nodos del DOM](./Ejemplo-01)
+
+---
+
+## Event object

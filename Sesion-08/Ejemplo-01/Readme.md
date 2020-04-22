@@ -1,27 +1,66 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 08`](../Readme.md) > `Ejemplo 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 1: Eventos en nodos del DOM
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Agregar event handlers a distintos nodos.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <title>Ejemplo 1: Eventos en nodos del DOM</title>
+  </head>
+  <body>
+    <h1 id="title">Hello World</h1>
 
-Agrega las instrucciones generales del ejemplo o reto
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="black">Black</button>
 
-<details>
+    <script>
+      // Code goes here
+    </script>
+  </body>
+</html>
+```
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Opcionalmente se puede manejar el código de JavaScript en un archivo independiente como se ha trabajado en sesiones anteriores.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+#### Desarrollo
 
+En este ejemplo vamos a cambiar el color del título agregando event handlers a todos los botones del documento. Tanto el título como los botones cuentan con un id único por lo que podemos usar `getElementById`.
 
+```javascript
+var title = document.getElementById('title');
+
+var redButton = document.getElementById('red');
+
+var blueButton = document.getElementById('blue');
+
+var blackButton = document.getElementById('black');
+```
+
+Ahora usaremos el método `addEventListener` para registrar un handler a cada botón. El cambio de color lo haremos asignando la propiedad `style` del nodo `title`.
+
+```javascript
+redButton.addEventListener("click", function() {
+  title.style = "color: red;";
+});
+
+blueButton.addEventListener("click", function() {
+  title.style = "color: blue;";
+});
+
+blackButton.addEventListener("click", function() {
+  title.style = "color: black;";
+});
+```
+
+![Ejemplo 1](./assets/colors.gif)
