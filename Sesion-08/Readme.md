@@ -21,6 +21,10 @@ Generar scripts que permitan la manipulación e interacción con la web.
 
 	- [Ejemplo 2: Usando event object](./Ejemplo-02)
 
+- **[Tipos de eventos](#tipos-de-eventos)**
+
+	- [Ejemplo 3: Key events](./Ejemplo-03)
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -117,3 +121,23 @@ La función de un event handler recibe un argumento `event`. Este es un objeto c
 La información contenida en el event object puede variar dependiendo del tipo de evento.
 
 #### [Ejemplo 2: Usando event object](./Ejemplo-02)
+
+---
+
+## Tipos de eventos
+
+### Teclado
+
+Cada vez que se presiona una tecla el navegador lanza un evento `keydown`, al soltar la tecla se ejecuta un evento `keyup`. Cuando usemos `keydown` hay que tomar en cuenta que no es un evento que se ejecute una sola vez, si la tecla se mantiene presionada el evento se seguirá ejecutando de manera constante.
+
+Podemos determinar la tecla presionada con la propiedad `key` del event object. Esta propiedad contiene un string con el nombre de la tecla presionada. Adicionalmente, si queremos determinar una combinación de teclas el event object cuenta con las propiedades `shiftKey`, `ctrlKey`, `altKey` y `metaKey` que contienen un booleano indicando si la tecla `Shift`, `Control`, `Alt` o `Meta` respectivamente se encontraba presionada cuando el evento ocurrió.
+
+> `Meta`: En teclados Macintosh es la tecla comando (⌘). En teclados Windows es la tecla window (⊞).
+
+### Mouse
+
+Similar a los eventos `keydown` y `keyup`, cuando presionamos un botón del mouse se ejcuta el evento `mousedown` y `mouseup` cuando se suelta el botón. Esto sucede en el nodo del DOM  donde se encuentre el cursor al momento que ocurre el evento. Después del evento `mouseup` se ejecuta el evento `click` que ya hemos visto anteriormente. En caso de que sucedan dos clicks de manera continua se lanza el evento `dblclick`.
+
+#### [Ejemplo 3: Key events](./Ejemplo-03)
+
+> Consultar la [siguiente documentación](https://developer.mozilla.org/es/docs/Web/Events) para una lista completa de los tipos de eventos.

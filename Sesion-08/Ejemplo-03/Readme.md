@@ -1,27 +1,62 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 08`](../Readme.md) > `Ejemplo 03`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 3: Key events
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Determinar las teclas presionadas al disparar un evento.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <title>Ejemplo 3: Key events</title>
+  </head>
+  <body>
 
-Agrega las instrucciones generales del ejemplo o reto
+    <h2>Press Enter to turn this page blue.</h2>
+    <h2>Press Ctrl + Enter to turn this page orange.</h2>
 
-<details>
+    <script>
+      // Code goes here
+    </script>
+  </body>
+</html>
+```
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Opcionalmente se puede manejar el código de JavaScript en un archivo independiente como se ha trabajado en sesiones anteriores.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+#### Desarrollo
 
+En este ejemplo vamos a ver cómo realizar un cambio en el DOM al presionar una tecla o combinación de teclas. Agregaremos un event handler a la global `window` de tipo `keydown` que se ejecuta al presionar una tecla.
 
+```javascript
+window.addEventListener("keydown", function(event) {
+  if (event.key == "Enter") {
+    document.body.style.background = "lightblue";
+  }
+
+  if (event.key == "Enter" && event.ctrlKey) {
+    document.body.style.background = "orange";
+  }
+});
+```
+
+Estamos leyendo dos propiedades del event object, la primera es `key` que nos dice qué tecla fue presionada. La segunda propiedad que nos interesa es `ctrlKey` que nos ayuda a determinar si la tecla `ctrl` estuvo presionada cuando se lanzó el evento. Vamos a cambiar el color de fondo del documento, si se presiona solamente la tecla `Enter` el color será azul, pero si se presiona la combinación de teclas `Ctrl + Enter` entonces el color será naraja.
+
+```javascript
+window.addEventListener("keyup", function(event) {
+  if (event.key == "Enter") {
+    document.body.style.background = "";
+  }
+});
+```
+
+Por último, necesitamos regresar al color por default cuando las teclas fueron soltadas, para eso utilizamos el evento `keyup` y verificamos que la tecla que se soltó es la misma que cambia el color, es decir, la tecla `Enter`.
+
+![Pressing Keys](./assets/pressing-keys.gif)
