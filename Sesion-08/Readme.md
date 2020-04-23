@@ -27,6 +27,10 @@ Generar scripts que permitan la manipulación e interacción con la web.
 
 	- [Reto 1: Inflar un globo](./Reto-01)
 
+	- [Reto 2: Modal](./Reto-02)
+
+	- [Reto 3: Navegando entre tabs](./Reto-03)
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -145,3 +149,7 @@ Similar a los eventos `keydown` y `keyup`, cuando presionamos un botón del mous
 > Consultar la [siguiente documentación](https://developer.mozilla.org/es/docs/Web/Events) para una lista completa de los tipos de eventos.
 
 #### [Reto 1: Inflar un globo](./Reto-01)
+
+#### [Reto 2: Modal](./Reto-02)
+
+#### [Reto 3: Navegando entre tabs](./Reto-03)
