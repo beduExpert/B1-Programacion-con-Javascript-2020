@@ -17,6 +17,10 @@ Generar scripts que permitan la manipulación e interacción con la web.
 
 	- [Ejemplo 1: Eventos en nodos del DOM](./Ejemplo-01)
 
+- **[Event object](#event-object)**
+
+		- [Ejemplo 2: Usando event object](./Ejemplo-02)
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -82,10 +86,34 @@ También podemos eliminar handlers que hayamos creado con anterioridad usando el
 </script>
 ```
 
-La fución que le pasemos a `removeEventListener` debe ser la misma que se le dió a `addEventListener`. En este caso se debe definir una función y darle un nombre, de esta forma podemos pasar la funicón a ambos métodos.
+La función que le pasemos a `removeEventListener` debe ser la misma que se le dió a `addEventListener`. En este caso se debe definir una función y darle un nombre, de esta forma podemos pasar la funicón a ambos métodos.
 
 #### [Ejemplo 1: Eventos en nodos del DOM](./Ejemplo-01)
 
 ---
 
 ## Event object
+
+La función de un event handler recibe un argumento `event`. Este es un objeto con toda la información referente al evento. Por ejemplo, si quisiéramos saber cuál botón del mouse fue presionado podemos leer la propiedad `button` del event object.
+
+```html
+<button>Click Here</button>
+
+<script>
+  var button = document.querySelector("button");
+
+  button.addEventListener("mousedown", function(event) {
+    if (event.button == 0) {
+      console.log("Left button");
+    } else if (event.button == 1) {
+      console.log("Middle button");
+    } else if (event.button == 2) {
+      console.log("Right button");
+    }
+  });
+</script>
+```
+
+La información contenida en el event object puede variar dependiendo del tipo de evento.
+
+#### [Ejemplo 2: Usando event object](./Ejemplo-02)

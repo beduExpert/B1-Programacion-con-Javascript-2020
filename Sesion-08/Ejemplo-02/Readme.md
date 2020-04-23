@@ -1,27 +1,54 @@
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 08`](../Readme.md) > `Ejemplo 02`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+---
 
-## Titulo del Ejemplo
+## Ejemplo 2: Usando event object
 
-### OBJETIVO
+### Objetivo
 
-- Lo que esperamos que el alumno aprenda
+Implementar propiedades del event object para manipular el DOM.
 
-#### REQUISITOS
+#### Requisitos
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+En una nueva carpeta vamos a crear un archivo `HTML` en blanco llamado `index.html`:
 
-#### DESARROLLO
+```html
+<html>
+  <head>
+    <title>Ejemplo 2: Usando event object</title>
+  </head>
+  <body>
+    <h1 id="title">Hello World!</h1>
 
-Agrega las instrucciones generales del ejemplo o reto
+    <input type="text" id="text" />
 
-<details>
+    <script>
+      // Code goes here
+    </script>
+  </body>
+</html>
+```
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Opcionalmente se puede manejar el código de JavaScript en un archivo independiente como se ha trabajado en sesiones anteriores.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+#### Desarrollo
 
+En el ejemplo anterior vimos como cambiar las propiedad de un nodo a través de event handlers. En este ejemplo vamos a usar la información contenida en el event object para manipular el DOM.
 
+```javascript
+var title = document.getElementById('title');
+
+var input = document.getElementById('text');
+```
+
+Ahora usaremos el método `addEventListener` para registrar un handler en el `<input/>`, el evento que queremos escuchar es `input`, el cual se dispara cuando hay un cambio en el nodo.
+
+```javascript
+input.addEventListener("input", function(event) {
+  title.textContent = event.target.value;
+});
+```
+
+La propiedad `textContent` nos permite obtener o cambiar el contenido de texto de un nodo. La propiedad `target` del event object es una referencia al nodo que lanzó el evento, en este caso nuestro `<input/>`, por lo que podemos acceder al atributo `value` de ese elemento.
+
+![Changing Text](./assets/changing-text.gif)
