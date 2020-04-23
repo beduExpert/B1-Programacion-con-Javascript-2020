@@ -19,7 +19,7 @@ Generar scripts que permitan la manipulación e interacción con la web.
 
 - **[Event object](#event-object)**
 
-		- [Ejemplo 2: Usando event object](./Ejemplo-02)
+	- [Ejemplo 2: Usando event object](./Ejemplo-02)
 
 - **[Reto final](./Reto-final)**
 
