@@ -25,6 +25,8 @@ Generar scripts que permitan la manipulación e interacción con la web.
 
 	- [Ejemplo 3: Key events](./Ejemplo-03)
 
+	- [Reto 1: Inflar un globo](./Reto-01)
+
 - **[Reto final](./Reto-final)**
 
 - **[Postwork](./Postwork)**
@@ -141,3 +143,5 @@ Similar a los eventos `keydown` y `keyup`, cuando presionamos un botón del mous
 #### [Ejemplo 3: Key events](./Ejemplo-03)
 
 > Consultar la [siguiente documentación](https://developer.mozilla.org/es/docs/Web/Events) para una lista completa de los tipos de eventos.
+
+#### [Reto 1: Inflar un globo](./Reto-01)

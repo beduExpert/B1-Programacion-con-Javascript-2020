@@ -1,27 +1,74 @@
- 
+[`Programación con JavaScript`](../../Readme.md) > [`Sesión 08`](../Readme.md) > `Reto 01`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+---
 
-### OBJETIVO 
+## Reto 1: Inflar un globo
 
-- Lo que esperamos que el alumno aprenda 
+### Objetivos
 
-#### REQUISITOS 
+Crear event handlers y usar el event object para determinar las teclas presionadas.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+#### Requisitos
 
-#### DESARROLLO
+Partir del siguiente documento HTML:
 
-Agrega las instrucciones generales del ejemplo o reto
+```html
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Reto 1: Inflar un globo</title>
+  </head>
+  <body>
+
+    <p>🎈</p>
+
+    <script>
+      // Code goes here
+    </script>
+  </body>
+</html>
+```
+
+#### Desarrollo
+
+En este reto el globo (🎈) debe inflarse (aumentar su tamaño) un 10% al presionar la flecha hacia arriba y desinflarse (disminuir su tamaño) un 10% el presionar la flecha hacia abajo.
+
+Los emojis son considerados como texto por lo que puedes controlar el tamaño con la propiedad de CSS `font-size`. El valor inicial debe ser de `20px`.
+
+Los nombres de las teclas de flecha que necesitas son `ArrowUp` y `ArrowDown`. Con el método `preventDefault()` podemos evitar que la página haga un scroll al presionar estas teclas.
+
+Por último, si el tamaño del globo es mayor a `80px` se debe reemplazar por el emoji 💥 y eliminar el event handler.
 
 <details>
+  <summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```javascript
+var p = document.querySelector("p");
+var size;
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+function setSize(newSize) {
+  size = newSize;
+  p.style.fontSize = size + "px";
+}
 
+setSize(20);
+
+function handleArrow(event) {
+  if (event.key == "ArrowUp") {
+    if (size > 80) {
+      p.textContent = "💥";
+      document.body.removeEventListener("keydown", handleArrow);
+    } else {
+      setSize(size * 1.1);
+      event.preventDefault();
+    }
+  } else if (event.key == "ArrowDown") {
+    setSize(size * 0.9);
+    event.preventDefault();
+  }
+}
+
+document.body.addEventListener("keydown", handleArrow);
+```
+
+</details>
