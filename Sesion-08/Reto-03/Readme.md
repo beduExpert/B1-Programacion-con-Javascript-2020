@@ -39,7 +39,7 @@ Partir del siguiente documento HTML:
 
 Crear una función `createTabs` que recibe un nodo del DOM y genera una interfaz de tabs de navegación.
 
-La función debe insertar una lista de elementos `<button>` al principio del nodo. Se debe crear un botón por cada nodo hijo. El texto del botón será el valor del atributo `data-tabname`. Sólamente se debe mostrar uno de los hijos a la vez y este debe cambiar dependiendo del botón que al que se haga click. La visibilidad de los elementos la puedes controlar con `display: none` y `display: block`.
+La función debe insertar una lista de elementos `<button>` al principio del nodo. Se debe crear un botón por cada nodo hijo. El texto del botón será el valor del atributo `data-tabname`. Sólamente se debe mostrar uno de los hijos a la vez y este debe cambiar dependiendo del botón seleccionado. La visibilidad de los elementos la puedes controlar con `display: none` y `display: block`.
 
 Por último, cambiar el color de texto del botón que esté seleccionado para que sea visible cuál tab es el que se encuentra activo.
 
