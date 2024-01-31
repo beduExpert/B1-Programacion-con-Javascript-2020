@@ -355,7 +355,7 @@ Number('123');	// Explícito
 Los valores primitivos también pueden ser convertidos a tipos numéricos con distintos resultados.
 
 ```javascript
-Number(' 10 ');	// 12
+Number(' 10 ');	// 10
 Number('-10');	// 10
 Number('123abc');	// NaN
 Number(true);	// 1
